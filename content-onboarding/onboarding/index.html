@@ -617,16 +617,15 @@
 
 
 <h1 id="prepare-your-work-environment">Prepare your work environment<a class="headerlink" href="#prepare-your-work-environment" title="Permanent link">&para;</a></h1>
-<p>Help us to improve this guide. Practice the GitLab workflow by improving or by adding something to this <a href="https://gitlab.com/StudentProjects/guide">guide</a>.</p>
+<p>Help us to improve this guide. Practice the GitHub workflow by improving or by adding something to this <a href="https://github.com/TUC-NT-DF/student-guide">guide</a>.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Every student of our team should contribute with at least <strong>two commits</strong> to this guide to make it better and to extend it. The easiest way is to look for problems <strong>you</strong> have with our onboarding process. Identify missing or incomplete pieces in this guide and improve it using the forking workflow. <strong>Additionally</strong>, choose one issue from the issue tracker of this project and solve it. Thank you 👍</p>
 </div>
-<p>If you don't have the access to this <a href="https://gitlab.com/StudentProjects/guide">guide</a> please ask to your supervisor for a permission.</p>
 <h1 id="system-requirements">System requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h1>
 <p>In order to install and use our tools, you need one of the following platforms:
 - Windows 10 (Intel 64-bit) or higher
-- Ubuntu 18.04 (Intel 64-bit) or higher</p>
+- Ubuntu 22.04 (Intel 64-bit) or higher</p>
 <h1 id="secure-your-laptop-or-notebook-computer">Secure your laptop or notebook computer<a class="headerlink" href="#secure-your-laptop-or-notebook-computer" title="Permanent link">&para;</a></h1>
 <p>Some of you will be provided with a notebook computer. This happens if you are an experienced member of the student team or if you are working remotely.</p>
 <p>We give you the maximum of flexibility to configure the computer to your needs. So please act responsibly and:</p>
@@ -649,18 +648,11 @@
 <p>This also applies if your use your own computer.</p>
 <h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
 <ul>
-<li>IDE for software development and debugging: Visual Studio Enterprise Edition 2019 <span class="arithmatex"><span class="MathJax_Preview">via [Microsoft Imagine Premium-Portal](https://www.tu-chemnitz.de/urz/software/dreamspark.php) of TU Chemnitz</span><script type="math/tex">via [Microsoft Imagine Premium-Portal](https://www.tu-chemnitz.de/urz/software/dreamspark.php) of TU Chemnitz</script></span>. That link will take you to Azure developer tools website. Provide your TUC email address and confirm registration. Then you can download the Visual Studio Installer. Currently only 2019 version is available.</li>
-<li>Git client: <a href="https://de.atlassian.com/software/sourcetree">SourceTree</a> or <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li>editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: <a href="https://atom.io">Atom editor</a></li>
-<li>install the following packages for the Atom editor<ul>
-<li>Markdown Preview Plus</li>
-<li>Markdown Preview Plus Opener</li>
-<li>Markdown Scroll Sync</li>
-</ul>
-</li>
+<li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li>Git client: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 <li>editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 <li>install the following extensions<ul>
-<li>GitLab Workflow</li>
+<li>GitHub</li>
 <li>markdownlint</li>
 </ul>
 </li>
@@ -672,51 +664,20 @@
 </ul>
 <h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
 <ul>
-<li>IDE for software development and debugging: <a href="https://www.jetbrains.com/clion/">CLion</a> <span class="arithmatex"><span class="MathJax_Preview">free for academic users</span><script type="math/tex">free for academic users</script></span></li>
-<li>It is recommended to install/enable these additional plugins:<ul>
-<li>"Markdown" (syntax highlighting + preview for .md files)</li>
-<li>"YAML" (syntax highlighting for .yaml files)</li>
-</ul>
-</li>
-<li><a href="https://www.jetbrains.com/webstorm/">Webstorm</a> (if you need to write JavaScript)<ul>
-<li>most CLion plugins work in Webstorm as well</li>
-</ul>
-</li>
-<li>editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: CLion/Webstorm (see above) or <a href="https://atom.io">Atom editor</a> (see Windows section for details)</li>
+<li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li><a href="https://www.jetbrains.com/webstorm/">Webstorm</a> (if you need to write JavaScript)</li>
+<li>editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 <li>Git client: A console-based Git client should already be on your system. (called <code>git</code>)<br />
   If you want a GUI, you can try installing <code>git-gui</code> or use the CLion plugin "Git Integration". (You do <em>not</em> need the GitHub or GitLab plugins.)</li>
 <li>Use your system's package manager to install <em>CMake</em>. There is a curses based terminal GUI and a Qt based GUI.</li>
 </ul>
-<h2 id="prepare-for-gitlab-access">Prepare for GitLab access<a class="headerlink" href="#prepare-for-gitlab-access" title="Permanent link">&para;</a></h2>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>Our team uses Git repositories from <strong>two</strong> different hosts:: <strong>gitlab.hrz.tu-chemnitz.de</strong> and <strong>gitlab.com</strong>. The gitlab host setups described below need to be done for both hosts.</p>
-</div>
-<h3 id="windows-10-generate-ssh-keys-for-gitlabhrztu-chemnitzde-access">Windows 10: Generate SSH keys for gitlab.hrz.tu-chemnitz.de access<a class="headerlink" href="#windows-10-generate-ssh-keys-for-gitlabhrztu-chemnitzde-access" title="Permanent link">&para;</a></h3>
+<h2 id="prepare-for-github-access">Prepare for GitHub access<a class="headerlink" href="#prepare-for-github-access" title="Permanent link">&para;</a></h2>
+<h3 id="windows-10-generate-ssh-keys">Windows 10: Generate SSH keys<a class="headerlink" href="#windows-10-generate-ssh-keys" title="Permanent link">&para;</a></h3>
 <ul>
 <li>open a windows powershell</li>
 <li>type <code>ssh-keygen -t ed25519 -C "ssh-key-TUC"</code></li>
 <li>the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;</li>
 <li><code>Your identification has been saved in C:\Users\...\.ssh\id_ed25519</code></li>
-<li>cd into this folder</li>
-<li>rename the files <code>id_ed25519</code> and <code>id_ed25519.pub</code> to <code>id_ed25519_gitlab_tuc</code> and <code>id_ed25519_gitlab_tuc.pub</code></li>
-<li>this can be done via
-<div class="highlight"><pre><span></span><code>ren id_ed25519 id_ed25519_gitlab_tuc
-ren id_ed25519.pub id_ed25519_gitlab_tuc.pub
-</code></pre></div></li>
-</ul>
-<h3 id="windows-10-generate-ssh-keys-for-gitlabcom-access">Windows 10: Generate SSH keys for gitlab.com access<a class="headerlink" href="#windows-10-generate-ssh-keys-for-gitlabcom-access" title="Permanent link">&para;</a></h3>
-<ul>
-<li>open a Windows PowerShell</li>
-<li>type <code>ssh-keygen -t ed25519 -C "ssh-key-gitlab_com"</code></li>
-<li>the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;</li>
-<li><code>Your identification has been saved in C:\Users\...\.ssh\id_ed25519</code></li>
-<li>cd into this folder</li>
-<li>rename the files <code>id_ed25519</code> and <code>id_ed25519.pub</code> to <code>id_ed25519_gitlab_com</code> and <code>id_ed25519_gitlab_com.pub</code></li>
-<li>this can be done via
-<div class="highlight"><pre><span></span><code>ren id_ed25519 id_ed25519_gitlab_com
-ren id_ed25519.pub id_ed25519_gitlab_com.pub
-</code></pre></div></li>
 </ul>
 <h3 id="windows-10-configure-your-ssh">Windows 10: Configure your SSH<a class="headerlink" href="#windows-10-configure-your-ssh" title="Permanent link">&para;</a></h3>
 <ul>
@@ -727,27 +688,19 @@ ren id_ed25519.pub id_ed25519_gitlab_com.pub
 <p><div class="highlight"><pre><span></span><code>echo &quot;This is sample text&quot; &gt; config
 </code></pre></div>
 * open the file with a text editor and type</p>
-<div class="highlight"><pre><span></span><code># gitlab.hrz.tu-chemnitz.de account
-Host gitlab.hrz.tu-chemnitz.de
- HostName gitlab.hrz.tu-chemnitz.de
+<div class="highlight"><pre><span></span><code># github.com account
+Host github.com
+ HostName github.com
  User INSERT-YOUR-USERNAME-HERE
- IdentityFile ~/.ssh/id_ed25519_gitlab_tuc
-
-# gitlab.com account
-Host gitlab.com
- HostName gitlab.com
- User INSERT-YOUR-USERNAME-HERE
- IdentityFile ~/.ssh/id_ed25519_gitlab_com 
+ IdentityFile ~/.ssh/id_ed25519
 </code></pre></div>
 <ul>
-<li>the user names are your user handle for the respective gitlab instance, it should look something like <em>abcd</em></li>
 <li>save and close the file (<strong>without</strong> a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.</li>
 </ul>
 <hr />
 <ul>
-<li>Deploy your public keys:</li>
-<li>for gitlab.hrz.tu-chemnitz.de (file <code>id_ed25519_gitlab_tuc.pub</code>) <a href="https://gitlab.hrz.tu-chemnitz.de/-/profile/keys">here</a></li>
-<li>for gitlab.com (file <code>id_ed25519_gitlab_com.pub</code>) <a href="https://gitlab.com/-/profile/keys">here</a>.</li>
+<li>Deploy your public key:</li>
+<li>for github.com (file <code>id_ed25519.pub</code>) <a href="https://github.com/settings/keys">here</a>.</li>
 </ul>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -757,32 +710,21 @@ Host gitlab.com
 <h3 id="windows-10-test-your-ssh-key-setup">Windows 10: Test your SSH key setup<a class="headerlink" href="#windows-10-test-your-ssh-key-setup" title="Permanent link">&para;</a></h3>
 <ul>
 <li>open Windows Powershell</li>
-<li>type <code>ssh -T git@gitlab.hrz.tu-chemnitz.de</code></li>
-<li>agree to add <em>gitlab.hrz.tu-chemnitz.de</em> to the list of trusted hosts</li>
-<li>
-<p>Run the above command once more, and you should only receive a <em>Welcome to GitLab, @username!</em> message.</p>
-</li>
-<li>
-<p>type <code>ssh -T git@gitlab.com</code></p>
-</li>
-<li>agree to add <em>GitLab.com</em> to the list of trusted hosts</li>
-<li>Run the above command once more, and you should only receive a <em>Welcome to GitLab, @username!</em> message.</li>
+<li>type <code>ssh -T git@github.com</code></li>
+<li>agree to add <em>github.com</em> to the list of trusted hosts</li>
+<li>Run the above command once more, and you should only receive a <em>Welcome to GitHub, @username!</em> message.</li>
 </ul>
 <p>If the welcome message doesn’t appear, run SSH’s verbose mode by replacing <code>-T</code> with <code>-vvvT</code> to understand where the error is.</p>
-<hr />
-<p>Source and more detailed information: <a href="https://docs.gitlab.com/ee/ssh/">https://docs.gitlab.com/ee/ssh/</a></p>
-<h3 id="linux-generate-ssh-keys-for-gitlab-access">Linux: Generate SSH keys for GitLab access<a class="headerlink" href="#linux-generate-ssh-keys-for-gitlab-access" title="Permanent link">&para;</a></h3>
+<h3 id="linux-generate-ssh-keys">Linux: Generate SSH keys<a class="headerlink" href="#linux-generate-ssh-keys" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Create a public/private key pair using the ssh-keygen commandline tool.<br />
-  It is recommended to use the default paths for the keys. If you want to use custom key paths, look <a href="https://gitlab.hrz.tu-chemnitz.de/help/ssh/README#working-with-non-default-ssh-key-pair-paths">here</a>.</li>
-<li>Deploy your public SSH key <span class="arithmatex"><span class="MathJax_Preview">usually stored in ~/.ssh/id\_rsa.pub</span><script type="math/tex">usually stored in ~/.ssh/id\_rsa.pub</script></span> <a href="https://gitlab.hrz.tu-chemnitz.de/profile/keys">here</a>.</li>
+  It is recommended to use the default paths for the keys.</li>
+<li>Deploy your public SSH key <span class="arithmatex"><span class="MathJax_Preview">usually stored in ~/.ssh/id\_rsa.pub</span><script type="math/tex">usually stored in ~/.ssh/id\_rsa.pub</script></span> <a href="https://github.com/settings/keys">here</a>.</li>
 <li>Additionally, specifically on Ubuntu, it might be necessary to do <code>ssh-add</code>. Look <a href="https://stackoverflow.com/questions/6167905/git-clone-through-ssh">here</a>.</li>
 </ul>
-<h2 id="save-the-public-ssh-key-in-gitlab">Save the public SSH Key in GitLab<a class="headerlink" href="#save-the-public-ssh-key-in-gitlab" title="Permanent link">&para;</a></h2>
+<h2 id="save-the-public-ssh-key-in-github">Save the public SSH Key in GitHub<a class="headerlink" href="#save-the-public-ssh-key-in-github" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Go to <a href="https://gitlab.hrz.tu-chemnitz.de/">GitLab.hrz</a> as well as to <a href="https://gitlab.com/">Gitlab.com</a> and Log in. The group maintains repositories on both sites. Therefore the remaining Gitlab setup instructions in this chapter apply to <strong>both</strong> sites (the user interfaces are the same)</li>
-<li>Click in the upper right corner and go to Settings</li>
-<li>In your User Settings go to the column SSH Keys</li>
+<li>Go to <a href="https://github.com/settings/keys">GitHub.com</a>.</li>
 <li>paste your public SSH Key and add a Title</li>
 <li>click on "Add Key" to confirm</li>
 </ul>
@@ -790,7 +732,6 @@ Host gitlab.com
 <h2 id="additional-steps">Additional Steps<a class="headerlink" href="#additional-steps" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Install Miniconda <span class="arithmatex"><span class="MathJax_Preview">based on Python 3</span><script type="math/tex">based on Python 3</script></span> by following the <a href="https://draive.com/link_dev/guide/01_Conda_Setup/">Conda How-To</a> and install the most important dependencies.</li>
-<li>Activate your <a href="https://gitlab.hrz.tu-chemnitz.de">GitLab account for TU Chemnitz</a>. Send an email to your supervisor to inform him that you have activated your GitLab account. Include your URZ user name (your supervisor needs it to give you access to repositories).</li>
 <li><a href="http://avatarmaker.com/">Create an avatar</a> for your GitLab account. Add it to your GitLab <a href="https://gitlab.com/-/profile">profile</a>.</li>
 </ul>
 <h2 id="prepare-for-software-version-control">Prepare for software version control<a class="headerlink" href="#prepare-for-software-version-control" title="Permanent link">&para;</a></h2>
