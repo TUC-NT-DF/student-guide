@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../working-with-GitHub/">
       
       
-        <link rel="next" href="../hiwi/">
+        <link rel="next" href="../../content-knowledgebase/test_drive/">
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>Getting Started - Student Guide</title>
+        <title>Working with KATA - Student Guide</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prepare-your-work-environment" class="md-skip">
+        <a href="#wroking-with-toyoyta-kata-workflow" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              Working with KATA
             
           </span>
         </div>
@@ -223,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../onboarding/" class="md-tabs__link md-tabs__link--active">
         Onboarding
       </a>
     </li>
@@ -357,21 +357,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../onboarding/" class="md-nav__link">
         Getting Started
       </a>
-      
     </li>
   
 
@@ -409,11 +399,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../KATA/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Working with KATA
       </a>
+      
     </li>
   
 
@@ -622,7 +622,7 @@
                   
 
   
-    <a href="https://github.com/TUC-NT-DF/student-guide/blob/master/docs/content-onboarding/onboarding.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/TUC-NT-DF/student-guide/blob/master/docs/content-onboarding/KATA.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -630,195 +630,16 @@
   
 
 
-<h1 id="prepare-your-work-environment">Prepare your work environment<a class="headerlink" href="#prepare-your-work-environment" title="Permanent link">&para;</a></h1>
-<p>Help us to improve this guide. Practice the GitHub workflow by improving or by adding something to this <a href="https://github.com/TUC-NT-DF/student-guide">guide</a>.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>Every student of our team should contribute with at least <strong>two commits</strong> to this guide to make it better and to extend it. The easiest way is to look for problems <strong>you</strong> have with our onboarding process. Identify missing or incomplete pieces in this guide and improve it using the forking workflow. <strong>Additionally</strong>, choose one issue from the issue tracker of this project and solve it. Thank you 👍</p>
-</div>
-<h1 id="system-requirements">System requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h1>
-<p>In order to install and use our tools, you need one of the following platforms:
-- Windows 10 (Intel 64-bit) or higher
-- Ubuntu 22.04 (Intel 64-bit) or higher</p>
-<h1 id="secure-your-laptop-or-notebook-computer">Secure your laptop or notebook computer<a class="headerlink" href="#secure-your-laptop-or-notebook-computer" title="Permanent link">&para;</a></h1>
-<p>Some of you will be provided with a notebook computer. This happens if you are an experienced member of the student team or if you are working remotely.</p>
-<p>We give you the maximum of flexibility to configure the computer to your needs. So please act responsibly and:</p>
-<ul>
-<li>Install a clean Windows 10 or Linux Ubuntu operating system.</li>
-<li>Encrypt the HDD and/or all partitions. This is necessary to protect our and your work in the case of computer loss.</li>
-<li>Windows: use Bitlocker or <a href="https://www.veracrypt.fr/en/Home.html">VeraCrypt</a></li>
-<li>Linux: use <a href="https://help.ubuntu.com/community/Full_Disk_Encryption_Howto_2019">full harddrive encyption</a></li>
-<li>Windows / Ubuntu dual boot: <a href="https://www.mikekasberg.com/blog/2020/04/08/dual-boot-ubuntu-and-windows-with-encryption.html">Bitlocker and encrypted Ubuntu system partition</a></li>
-<li>fully encrypt your USB flash drives and external USB harddisks as well</li>
-<li>backup your system and data regularly (daily)</li>
-</ul>
-<p>Setup Bitlocker on Windows 10:
-* go to control Panel -&gt; system and security -&gt; BitLocker Drive Encryption
-* select the drive you want to encrypt
-* enter a password
-* <b>important: backup your recovery key</b></p>
-<p><img alt="sorry, image not available" src="../../assets/Bitlocker.png" title="" /></p>
-<h2 id="install-the-following-tools">Install the following tools<a class="headerlink" href="#install-the-following-tools" title="Permanent link">&para;</a></h2>
-<p>This also applies if your use your own computer.</p>
-<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
-<ul>
-<li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li>Git client: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li>editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li>install the following extensions<ul>
-<li>GitHub</li>
-<li>markdownlint</li>
-</ul>
-</li>
-<li>if you need to write JavaScript code and you don't have a good JS IDE available yet, consider</li>
-<li>Visual Studio Ultimate Edition or</li>
-<li><a href="https://www.jetbrains.com/webstorm/">Webstorm</a></li>
-<li>Install <a href="https://cmake.org/">CMake</a></li>
-<li>Install <a href="https://git-scm.com/">Git</a></li>
-</ul>
-<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
-<ul>
-<li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li><a href="https://www.jetbrains.com/webstorm/">Webstorm</a> (if you need to write JavaScript)</li>
-<li>editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li>Git client: A console-based Git client should already be on your system. (called <code>git</code>)<br />
-  If you want a GUI, you can try installing <code>git-gui</code> or use the CLion plugin "Git Integration". (You do <em>not</em> need the GitHub or GitLab plugins.)</li>
-<li>Use your system's package manager to install <em>CMake</em>. There is a curses based terminal GUI and a Qt based GUI.</li>
-</ul>
-<h2 id="prepare-for-github-access">Prepare for GitHub access<a class="headerlink" href="#prepare-for-github-access" title="Permanent link">&para;</a></h2>
-<h3 id="windows-10-generate-ssh-keys">Windows 10: Generate SSH keys<a class="headerlink" href="#windows-10-generate-ssh-keys" title="Permanent link">&para;</a></h3>
-<ul>
-<li>open a windows powershell</li>
-<li>type <code>ssh-keygen -t ed25519 -C "ssh-key-TUC"</code></li>
-<li>the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;</li>
-<li><code>Your identification has been saved in C:\Users\...\.ssh\id_ed25519</code></li>
-</ul>
-<h3 id="windows-10-configure-your-ssh">Windows 10: Configure your SSH<a class="headerlink" href="#windows-10-configure-your-ssh" title="Permanent link">&para;</a></h3>
-<ul>
-<li>open a Windows PowerShell</li>
-<li>cd into the <code>.ssh</code> folder (was at <code>C:\Users\...\.ssh</code>)</li>
-<li>create an empty text file <code>config</code> (<strong>without</strong> a file extension) and this can done via</li>
-</ul>
-<p><div class="highlight"><pre><span></span><code>echo &quot;This is sample text&quot; &gt; config
-</code></pre></div>
-* open the file with a text editor and type</p>
-<div class="highlight"><pre><span></span><code># github.com account
-Host github.com
- HostName github.com
- User INSERT-YOUR-USERNAME-HERE
- IdentityFile ~/.ssh/id_ed25519
-</code></pre></div>
-<ul>
-<li>save and close the file (<strong>without</strong> a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.</li>
-</ul>
-<hr />
-<ul>
-<li>Deploy your public key:</li>
-<li>for github.com (file <code>id_ed25519.pub</code>) <a href="https://github.com/settings/keys">here</a>.</li>
-</ul>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.</p>
-</div>
-<p><strong>Ignore</strong> the statement "Before you can add an SSH key you need to generate it." You just created this key.</p>
-<h3 id="windows-10-test-your-ssh-key-setup">Windows 10: Test your SSH key setup<a class="headerlink" href="#windows-10-test-your-ssh-key-setup" title="Permanent link">&para;</a></h3>
-<ul>
-<li>open Windows Powershell</li>
-<li>type <code>ssh -T git@github.com</code></li>
-<li>agree to add <em>github.com</em> to the list of trusted hosts</li>
-<li>Run the above command once more, and you should only receive a <em>Welcome to GitHub, @username!</em> message.</li>
-</ul>
-<p>If the welcome message doesn’t appear, run SSH’s verbose mode by replacing <code>-T</code> with <code>-vvvT</code> to understand where the error is.</p>
-<h3 id="linux-generate-ssh-keys">Linux: Generate SSH keys<a class="headerlink" href="#linux-generate-ssh-keys" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Create a public/private key pair using the ssh-keygen commandline tool.<br />
-  It is recommended to use the default paths for the keys.</li>
-<li>Deploy your public SSH key <span class="arithmatex"><span class="MathJax_Preview">usually stored in ~/.ssh/id\_rsa.pub</span><script type="math/tex">usually stored in ~/.ssh/id\_rsa.pub</script></span> <a href="https://github.com/settings/keys">here</a>.</li>
-<li>Additionally, specifically on Ubuntu, it might be necessary to do <code>ssh-add</code>. Look <a href="https://stackoverflow.com/questions/6167905/git-clone-through-ssh">here</a>.</li>
-</ul>
-<h2 id="save-the-public-ssh-key-in-github">Save the public SSH Key in GitHub<a class="headerlink" href="#save-the-public-ssh-key-in-github" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Go to <a href="https://github.com/settings/keys">GitHub.com</a>.</li>
-<li>paste your public SSH Key and add a Title</li>
-<li>click on "Add Key" to confirm</li>
-</ul>
-<p><img alt="sorry, image not available" src="../../assets/ssh.png" title="" /></p>
-<h2 id="additional-steps">Additional Steps<a class="headerlink" href="#additional-steps" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Install Miniconda <span class="arithmatex"><span class="MathJax_Preview">based on Python 3</span><script type="math/tex">based on Python 3</script></span> by following the <a href="https://draive.com/link_dev/guide/01_Conda_Setup/">Conda How-To</a> and install the most important dependencies.</li>
-<li><a href="http://avatarmaker.com/">Create an avatar</a> for your GitLab account. Add it to your GitLab <a href="https://gitlab.com/-/profile">profile</a>.</li>
-</ul>
-<h2 id="prepare-for-software-version-control">Prepare for software version control<a class="headerlink" href="#prepare-for-software-version-control" title="Permanent link">&para;</a></h2>
-<p><strong>please read and follow the instructions carefully!</strong></p>
-<p><a href="../working-with-GitHub/">The GitLab workflow used by our team...</a></p>
-<h1 id="meeting-and-communication-with-your-supervisor">Meeting and communication with your supervisor<a class="headerlink" href="#meeting-and-communication-with-your-supervisor" title="Permanent link">&para;</a></h1>
-<p>Meet your supervisor regularly. If you have a meeting,</p>
-<ul>
-<li>Always bring your paper notebook. (see below)</li>
-<li>Always bring your laptop.</li>
-<li>Be well prepared to explain what you were supposed to do, what the results are, how you solved problems and what the next steps are.</li>
-<li>Do not be late. If you realise that you will be late, call your supervisor immediately and/or send a signal message or SMS <span class="arithmatex"><span class="MathJax_Preview">see below</span><script type="math/tex">see below</script></span>.</li>
-</ul>
-<p>In addition to email most of our team uses encrypted messaging. Please consult your supervisor which encryped messenger to use - or just install both :)</p>
-<ul>
-<li>Primary: <a href="https://about.riot.im/">Riot - open source team collaboration tool</a></li>
-<li>Backup: <a href="https://whispersystems.org/">Signal messenger</a></li>
-</ul>
-<h2 id="write-down-all-your-findings">Write down all your findings<a class="headerlink" href="#write-down-all-your-findings" title="Permanent link">&para;</a></h2>
-<p>Please use an old-school paper notebook <span class="arithmatex"><span class="MathJax_Preview">minimum size: DIN A5</span><script type="math/tex">minimum size: DIN A5</script></span> to write down your tasks, findings, ideas, results. Do not use single sheets of paper. They get lost easily. Have this notebook ready during your work and in our meetings.</p>
-<p><img alt="sorry, image not available" src="../../assets/student-onboarding-notebook.jpg" title="paper notebook for your notes" /></p>
-<h1 id="how-to-develop-software-with-less-pain">How to develop software with less pain<a class="headerlink" href="#how-to-develop-software-with-less-pain" title="Permanent link">&para;</a></h1>
-<p>Read the <a href="../../content-ops/PC3/">PC3</a> file which describes the rules of software development our team chose to follow.</p>
-<h1 id="recommended-programming-books">Recommended programming books<a class="headerlink" href="#recommended-programming-books" title="Permanent link">&para;</a></h1>
-<p>We are a polyglot programming team. We are OK with using multiple languages and we try to use the right tool for the job.</p>
-<p>Since we focus on algorithm development, the C++ language is our primary choice for fast and powerful code.</p>
-<p>Just "googling" is not enough to become a good programmer! Read some good books:</p>
-<p><strong>Basic</strong></p>
-<ul>
-<li>Programming: Principles and Practice Using C++ <span class="arithmatex"><span class="MathJax_Preview">Bjarne Stroustrup</span><script type="math/tex">Bjarne Stroustrup</script></span></li>
-</ul>
-<p><strong>Advanced</strong></p>
-<ul>
-<li>
-<p>Effective C++: 55 Specific Ways to Improve Your Programs and Designs <span class="arithmatex"><span class="MathJax_Preview">Scott Meyers</span><script type="math/tex">Scott Meyers</script></span><br />
-<span class="arithmatex"><span class="MathJax_Preview">read this book _before_ you read "Effective Modern C++"</span><script type="math/tex">read this book _before_ you read "Effective Modern C++"</script></span></p>
-</li>
-<li>
-<p>Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14 <span class="arithmatex"><span class="MathJax_Preview">Scott Meyers</span><script type="math/tex">Scott Meyers</script></span></p>
-</li>
-<li>
-<p>Design Patterns <span class="arithmatex"><span class="MathJax_Preview">Erich Gamma</span><script type="math/tex">Erich Gamma</script></span> <em>and</em> <a href="https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns">here</a></p>
-</li>
-</ul>
-<h1 id="how-to-do-research">How to do research<a class="headerlink" href="#how-to-do-research" title="Permanent link">&para;</a></h1>
-<p>You are working in a research lab now. Bill Freeman's very true article describes what that means:</p>
-<p><a href="http://people.csail.mit.edu/billf/publications/How_To_Do_Research.pdf">How to do research, March 6, 2013 Bill Freeman, CSAIL, MIT</a></p>
-<h1 id="cross-cultural-communication">Cross-Cultural communication<a class="headerlink" href="#cross-cultural-communication" title="Permanent link">&para;</a></h1>
-<p>Are you wondering about the German business and working culture? This guide from the <em>Deutsche Gesellschaft für Internationale Zusammenarbeit <span class="arithmatex"><span class="MathJax_Preview">GIZ</span><script type="math/tex">GIZ</script></span></em> provides some insights:</p>
-<p><a href="http://www.asprea.org/imagenes/GIZ-_How_to_do_business_with_Germans_Kavalchuk-angles-1359942678515.pdf">Cross-Cultural Management: How to Do Business with Germans - A Guide –</a></p>
-<h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
-<p><strong>Q:</strong> I have seen that some students do not follow the userguide. For example some do not have an avatar. How should I proceed in that way? Should I follow the userguide or should I do what other students are doing / not doing?</p>
-<p><strong>A:</strong> Please follow the userguide. If you don't understand some contents, ask your supervisor and help to improve the guide.</p>
-<p>If other students behave different from the workflow described in the userguide ask them why they do so. If they provide a reasonable explanation, discuss with your supervisor.</p>
-<p>Some students do not follow the userguide because they do not know it or they decided to ignore it. Do not worry about it.</p>
-<p>In order to become smarter, we do not recommend you to ignore the hints we are providing in the userguide ;)</p>
-<p>The userguide is the only source of truth during the onboarding process.</p>
-<p><strong>Q:</strong> My work follows the <em>target condition</em> (TC) method. Since I work very hard, I do not have time to update the target condition. What should I do?</p>
-<p><strong>A:</strong> Updating the target condition is part of your work and the target condition itself. You should take into account the additional time when estimating your due date. The past has shown that successful students need only 5..10 minutes to update their target condition.</p>
-<p><strong>Q:</strong> What should I do when I realize that I will miss the due date of my target condition?</p>
-<p><strong>A:</strong> When you realize that you will miss your due date, please do as follows:</p>
-<ul>
-<li>describe in the issue why you will miss the due date <strong>before the due date has passed</strong></li>
-<li>why was your estimate wrong, what happened<ul>
-<li>pro tip: try to be honest to yourself: if you have bad time management, say it ... and improve it ;)</li>
-</ul>
-</li>
-<li>what will you do to have a better estimate next time</li>
-<li>estimate a new due date and update the TC issue</li>
-<li>inform your supervisor that you will miss the due date and that you have updated the issue</li>
-</ul>
-<p><strong>Q:</strong> I do not know how to estimate the due date. What should I do?</p>
-<p><strong>A:</strong> Every student in our team should be able to estimate the amount of time he/she needs to reach a target condition (finish a task). If you have problems estimating the time, choose a smaller target condition. A one day duration is a good start.</p>
+<h1 id="wroking-with-toyoyta-kata-workflow">Wroking with Toyoyta KATA workflow<a class="headerlink" href="#wroking-with-toyoyta-kata-workflow" title="Permanent link">&para;</a></h1>
+<p>Toyota Kata is a systematic approach for developing continuous improvement habits that stick. The Toyota Kata framework turns scientific thinking into a practical skill anyone, and any organization, can learn through the deliberate practice of a four-step learning and discovery process. By following the Toyota Kata structure, we will elegantly move from our current state to our desired future state. </p>
+<p>More information on KATA workflow can be found online.</p>
+<p>Some examples are,
+Quick reads:
+    1. <a href="https://www.gembaacademy.com/resources/gemba-glossary/kata">https://www.gembaacademy.com/resources/gemba-glossary/kata</a>
+    2. <a href="https://www.lean.org/the-lean-post/articles/the-toyota-way-and-toyota-kata-how-do-they-fit/">https://www.lean.org/the-lean-post/articles/the-toyota-way-and-toyota-kata-how-do-they-fit/</a></p>
+<p>More detailed explanations:
+    1. <a href="http://www-personal.umich.edu/~mrother/Handbook/Practice_Guide.pdf">Complete KATA Guide, University of Michigan</a>. 
+    2. <a href="https://books.google.de/books?id=rFDq1DYprzYC&amp;printsec=frontcover&amp;redir_esc=y#v=onepage&amp;q&amp;f=false">Toyota KATA, by Mike Rother</a></p>
 
   <hr>
 <div class="md-source-file">
