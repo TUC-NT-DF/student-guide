@@ -15,7 +15,7 @@
         <link rel="next" href="../hiwi/">
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
@@ -686,14 +686,15 @@
 <li>Use your system's package manager to install <em>CMake</em>. There is a curses based terminal GUI and a Qt based GUI.</li>
 </ul>
 <h2 id="prepare-for-github-access">Prepare for GitHub access<a class="headerlink" href="#prepare-for-github-access" title="Permanent link">&para;</a></h2>
-<h3 id="windows-10-generate-ssh-keys">Windows 10: Generate SSH keys<a class="headerlink" href="#windows-10-generate-ssh-keys" title="Permanent link">&para;</a></h3>
+<h3 id="windows-10">Windows 10<a class="headerlink" href="#windows-10" title="Permanent link">&para;</a></h3>
+<h4 id="generate-ssh-keys">Generate SSH keys<a class="headerlink" href="#generate-ssh-keys" title="Permanent link">&para;</a></h4>
 <ul>
 <li>open a windows powershell</li>
 <li>type <code>ssh-keygen -t ed25519 -C "ssh-key-TUC"</code></li>
 <li>the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;</li>
 <li><code>Your identification has been saved in C:\Users\...\.ssh\id_ed25519</code></li>
 </ul>
-<h3 id="windows-10-configure-your-ssh">Windows 10: Configure your SSH<a class="headerlink" href="#windows-10-configure-your-ssh" title="Permanent link">&para;</a></h3>
+<h4 id="configure-your-ssh">Configure your SSH<a class="headerlink" href="#configure-your-ssh" title="Permanent link">&para;</a></h4>
 <ul>
 <li>open a Windows PowerShell</li>
 <li>cd into the <code>.ssh</code> folder (was at <code>C:\Users\...\.ssh</code>)</li>
@@ -711,17 +712,12 @@ Host github.com
 <ul>
 <li>save and close the file (<strong>without</strong> a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.</li>
 </ul>
-<hr />
-<ul>
-<li>Deploy your public key:</li>
-<li>for github.com (file <code>id_ed25519.pub</code>) <a href="https://github.com/settings/keys">here</a>.</li>
-</ul>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.</p>
+<p>Prefer <a href="https://notepad-plus-plus.org/">Notepad++</a>, <a href="https://code.visualstudio.com/">Visual Studio Code</a>, or Notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.</p>
 </div>
 <p><strong>Ignore</strong> the statement "Before you can add an SSH key you need to generate it." You just created this key.</p>
-<h3 id="windows-10-test-your-ssh-key-setup">Windows 10: Test your SSH key setup<a class="headerlink" href="#windows-10-test-your-ssh-key-setup" title="Permanent link">&para;</a></h3>
+<h4 id="test-your-ssh-key-setup">Test your SSH key setup<a class="headerlink" href="#test-your-ssh-key-setup" title="Permanent link">&para;</a></h4>
 <ul>
 <li>open Windows Powershell</li>
 <li>type <code>ssh -T git@github.com</code></li>
@@ -729,20 +725,24 @@ Host github.com
 <li>Run the above command once more, and you should only receive a <em>Welcome to GitHub, @username!</em> message.</li>
 </ul>
 <p>If the welcome message doesn’t appear, run SSH’s verbose mode by replacing <code>-T</code> with <code>-vvvT</code> to understand where the error is.</p>
-<h3 id="linux-generate-ssh-keys">Linux: Generate SSH keys<a class="headerlink" href="#linux-generate-ssh-keys" title="Permanent link">&para;</a></h3>
+<h3 id="linux_1">Linux<a class="headerlink" href="#linux_1" title="Permanent link">&para;</a></h3>
+<h4 id="generate-ssh-keys_1">Generate SSH keys<a class="headerlink" href="#generate-ssh-keys_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Create a public/private key pair using the ssh-keygen commandline tool.<br />
   It is recommended to use the default paths for the keys.</li>
 <li>Deploy your public SSH key <span class="arithmatex"><span class="MathJax_Preview">usually stored in ~/.ssh/id\_rsa.pub</span><script type="math/tex">usually stored in ~/.ssh/id\_rsa.pub</script></span> <a href="https://github.com/settings/keys">here</a>.</li>
 <li>Additionally, specifically on Ubuntu, it might be necessary to do <code>ssh-add</code>. Look <a href="https://stackoverflow.com/questions/6167905/git-clone-through-ssh">here</a>.</li>
 </ul>
-<h2 id="save-the-public-ssh-key-in-github">Save the public SSH Key in GitHub<a class="headerlink" href="#save-the-public-ssh-key-in-github" title="Permanent link">&para;</a></h2>
+<h3 id="deploy-ssh-public-key-to-github">Deploy SSH Public Key to GitHub<a class="headerlink" href="#deploy-ssh-public-key-to-github" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Go to <a href="https://github.com/settings/keys">GitHub.com</a>.</li>
-<li>paste your public SSH Key and add a Title</li>
-<li>click on "Add Key" to confirm</li>
+<li>Go to <a href="https://github.com/settings/keys">SSH keys</a> settings in GitHub.</li>
+<li>Click on <code>New SSH key</code> button.</li>
+<li>Enter <code>Title</code> of your choice (e.g. <code>ssh-key-TUC</code>).</li>
+<li>Set <code>Key Type</code> as <code>Authentication Key</code>.</li>
+<li>Paste your public key from the file that was generated (<code>C:\Users\...\.ssh\id_ed25519.pub</code>) into the <code>Key</code> field.</li>
+<li>Click on <code>Add SSH Key</code> button.
+<img alt="Deploy Public SSH Key to GitHub" src="../../assets/deploy-ssh-key.png" title="Deploy Public SSH Key to GitHub" /></li>
 </ul>
-<p><img alt="sorry, image not available" src="../../assets/ssh.png" title="" /></p>
 <h2 id="additional-steps">Additional Steps<a class="headerlink" href="#additional-steps" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Install Miniconda <span class="arithmatex"><span class="MathJax_Preview">based on Python 3</span><script type="math/tex">based on Python 3</script></span> by following the <a href="https://draive.com/link_dev/guide/01_Conda_Setup/">Conda How-To</a> and install the most important dependencies.</li>
@@ -825,7 +825,7 @@ Host github.com
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 2, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 3, 2023</span>
       
         <br>
         Created:
@@ -871,10 +871,10 @@ Host github.com
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "content.action.edit", "toc.integrate"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "content.action.edit", "toc.integrate"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
