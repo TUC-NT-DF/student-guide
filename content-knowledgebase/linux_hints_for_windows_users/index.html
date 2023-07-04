@@ -529,8 +529,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-gitlab-access-working" class="md-nav__link">
-    Getting GitLab access working
+  <a href="#getting-github-access-working" class="md-nav__link">
+    Getting GitHub access working
   </a>
   
 </li>
@@ -669,13 +669,16 @@
 <p>Our colleague Peter Kueffner shares a few notes about avoiding issues that Windows users have, when trying out Ubuntu (e.g. by setting up a Ubuntu VM):</p>
 <h2 id="sshsftp-access">SSH/SFTP access<a class="headerlink" href="#sshsftp-access" title="Permanent link">&para;</a></h2>
 <ul>
-<li>In order to be able to use PuTTY and FileZilla with Ubuntu, you need to install the <code>openssh-server</code> package via apt-get.</li>
+<li>In order to be able to use PuTTY and FileZilla with Ubuntu, you need to install the <code>openssh-server</code> package via apt-get. This can be done via
+'''
+sudo apt-get install openssh-server
+'''</li>
 <li>No adjustments to the Firewall should be required after the installation. (Just note that you can't log in as <em>root</em> user.)</li>
 <li>You can connect to the Ubuntu using FileZilla via SFTP with the username/password you use to log in there.<br />
     You need to explicitly specify that in the URL.
     e.g. with <code>sftp://10.0.0.1/</code></li>
 </ul>
-<h2 id="getting-gitlab-access-working">Getting GitLab access working<a class="headerlink" href="#getting-gitlab-access-working" title="Permanent link">&para;</a></h2>
+<h2 id="getting-github-access-working">Getting GitHub access working<a class="headerlink" href="#getting-github-access-working" title="Permanent link">&para;</a></h2>
 <ul>
 <li>You need your private SSH key on the machine.</li>
 <li>Then SSH key needs to be in OpenSSH format (<em>not</em> PuTTY's ppk).
@@ -693,7 +696,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 30, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 3, 2023</span>
       
         <br>
         Created:
