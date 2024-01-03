@@ -8,6 +8,7 @@ More information on KATA workflow can be found online.
 
 1. [https://www.gembaacademy.com/resources/gemba-glossary/kata](https://www.gembaacademy.com/resources/gemba-glossary/kata)
 2. [https://www.lean.org/the-lean-post/articles/the-toyota-way-and-toyota-kata-how-do-they-fit/](https://www.lean.org/the-lean-post/articles/the-toyota-way-and-toyota-kata-how-do-they-fit/)
+3. [Toyota Kata: Empowering Employees for Target-Oriented Improvement- A Best Practice Approach](http://hdl.handle.net/10419/209255)
 
 ## More detailed explanations
 
