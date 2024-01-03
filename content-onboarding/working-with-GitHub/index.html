@@ -545,9 +545,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commits-and-merge-requests" class="md-nav__link">
+  <a href="#commits-and-pull-requests" class="md-nav__link">
     <span class="md-ellipsis">
-      Commits and merge requests
+      Commits and pull requests
     </span>
   </a>
   
@@ -564,9 +564,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#merge-requests-with-wrong-title-and-too-much-code-see-below" class="md-nav__link">
+  <a href="#pull-requests-with-wrong-title-and-too-much-code-see-below" class="md-nav__link">
     <span class="md-ellipsis">
-      Merge Requests with wrong title and too much code (see below):
+      Pull Requests with wrong title and too much code (see below):
     </span>
   </a>
   
@@ -582,13 +582,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#commits-of-mr-solving-multiple-problems-and-mr-with-too-much-code" class="md-nav__link">
+  <a href="#commits-of-pr-solving-multiple-problems-and-pr-with-too-much-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Commits of MR solving multiple problems and MR with too much code:
+      Commits of PR solving multiple problems and PR with too much code:
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Commits of MR solving multiple problems and MR with too much code:">
+    <nav class="md-nav" aria-label="Commits of PR solving multiple problems and PR with too much code:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1005,7 +1005,7 @@
 <p><img alt="sorry, image not available" src="../../assets/origin_ssh_path.png" title="where to find the SSH path" /></p>
 <ul>
 <li>
-<p>To submit your code to the upstream repository, create a merge request from your personal fork in the web interface</p>
+<p>To submit your code to the upstream repository, create a pull request from your personal fork in the web interface</p>
 </li>
 <li>
 <p>if you need to update your personal fork from the project it was created from, do a "pull from upstream" &rarr; <a href="https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/">https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/</a></p>
@@ -1014,21 +1014,25 @@
 <h2 id="attention">Attention<a class="headerlink" href="#attention" title="Permanent link">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>Never use spaces in folder oder filenames.</p>
+<p>Never use spaces in folder or filenames.</p>
 </div>
-<h2 id="commits-and-merge-requests">Commits and merge requests<a class="headerlink" href="#commits-and-merge-requests" title="Permanent link">&para;</a></h2>
-<p>Please follow <a href="../../content-ops/PC3/">PC3</a> for commits and merge requests.</p>
-<p><b>A proper merge request MUST follow <em>Problem:/Solution:</em> syntax and solve <strong>only one small</strong> problem.</b></p>
-<p><b>The title of MR MUST contain a definition of the current problem ("Problem: ..."). The proposed solution ("Solution: ...") MUST be written in the description field of MR.</b></p>
+<h2 id="commits-and-pull-requests">Commits and pull requests<a class="headerlink" href="#commits-and-pull-requests" title="Permanent link">&para;</a></h2>
+<p>Please follow <a href="../../content-ops/PC3/">PC3</a> for commits and pull requests.</p>
+<p><b>A proper pull request MUST follow <em>Problem:/Solution:</em> syntax and solve <strong>only one small</strong> problem.</b></p>
+<p><b>The title of PR MUST contain a definition of the current problem ("Problem: ..."). The proposed solution ("Solution: ...") MUST be written in the description field of PR.</b></p>
 <p><b>! Important Note: Merging is only done by SUPERVISORS!
 That means: when you're asked to upload files or update a repository, DO NOT MERGE, but only create a Pull Request and assign it to your supervisor so that they can merge it after checking it. So please only follow the <a href="../../assets/github_workflow_beginner_01.png">WORKFLOW</a> mentioned previously!</b></p>
-<p><img alt="sorry, image not available" src="../../assets/gitlab-workflow-ProbSol-example.jpg" title="Example of MR creation" /></p>
+<p><img alt="sorry, image not available" src="../../assets/pull_request_example.jpg" title="Example of PR creation" /></p>
 <h2 id="bad-and-good-examples">Bad and good examples<a class="headerlink" href="#bad-and-good-examples" title="Permanent link">&para;</a></h2>
-<h3 id="merge-requests-with-wrong-title-and-too-much-code-see-below">Merge Requests with wrong title and too much code (see below):<a class="headerlink" href="#merge-requests-with-wrong-title-and-too-much-code-see-below" title="Permanent link">&para;</a></h3>
-<p><img alt="sorry, image not available" src="../../assets/gitlab-workflow-MRs-goodbad.jpg" title="wrong merge request" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The example pictures below are from GitLab, but the concepts are equally applicable to GitHub.</p>
+</div>
+<h3 id="pull-requests-with-wrong-title-and-too-much-code-see-below">Pull Requests with wrong title and too much code (see below):<a class="headerlink" href="#pull-requests-with-wrong-title-and-too-much-code-see-below" title="Permanent link">&para;</a></h3>
+<p><img alt="sorry, image not available" src="../../assets/gitlab-workflow-MRs-goodbad.jpg" title="wrong pull request" /></p>
 <h3 id="commits-with-unclear-content-description">Commits with unclear content description:<a class="headerlink" href="#commits-with-unclear-content-description" title="Permanent link">&para;</a></h3>
 <p><img alt="sorry, image not available" src="../../assets/gitlab-workflow-ProbSol-goodbad.jpg" title="wrong commit" /></p>
-<h3 id="commits-of-mr-solving-multiple-problems-and-mr-with-too-much-code">Commits of MR solving multiple problems and MR with too much code:<a class="headerlink" href="#commits-of-mr-solving-multiple-problems-and-mr-with-too-much-code" title="Permanent link">&para;</a></h3>
+<h3 id="commits-of-pr-solving-multiple-problems-and-pr-with-too-much-code">Commits of PR solving multiple problems and PR with too much code:<a class="headerlink" href="#commits-of-pr-solving-multiple-problems-and-pr-with-too-much-code" title="Permanent link">&para;</a></h3>
 <p><img alt="sorry, image not available" src="../../assets/gitlab-workflow-MRsize-goodbad.jpg" title="too much code" /></p>
 <h4 id="pushing-to-a-repository-with-2fa2-factor-authentication">Pushing to a repository with 2FA(2 Factor Authentication)<a class="headerlink" href="#pushing-to-a-repository-with-2fa2-factor-authentication" title="Permanent link">&para;</a></h4>
 <p>While pushing to a repository on which 2FA is enabled, you will be asked for a Personal Access Token. The procedure on how to create a PAT is described <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">here</a>. Once a PAT is created, please save the PAT somewhere <em><em>safe</em></em> (you will not be able to view it a second time) and use the same instead of your password.</p>
@@ -1053,8 +1057,8 @@ That means: when you're asked to upload files or update a repository, DO NOT MER
 <p>After that you should commit regularly. Usually this is done every some hours.</p>
 <p>You can not commit too often!</p>
 <hr />
-<p><strong>Q:</strong> What do you mean with Problem/Solution statement according to <a href="../../content-ops/PC3/">PC3</a> in the merge requests?</p>
-<p><strong>A:</strong> A merge request contains a solution to a <strong>single</strong> and <strong>small</strong> problem. You need to name the problem and its solution in the MR.</p>
+<p><strong>Q:</strong> What do you mean with Problem/Solution statement according to <a href="../../content-ops/PC3/">PC3</a> in the pull requests?</p>
+<p><strong>A:</strong> A pull request contains a solution to a <strong>single</strong> and <strong>small</strong> problem. You need to name the problem and its solution in the PR.</p>
 <p>A problem description does <strong>not</strong> start with <em>to</em>.</p>
 <p>Just think about how you would continue this sentence: <em>My problem is, that ...</em></p>
 <p><strong>Example - incorrect:</strong>
@@ -1123,7 +1127,7 @@ Until then we will use SourceTree or TortoiseGit with Putty SSH keys and the Tgi
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 12, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2023</span>
   </span>
 
     
