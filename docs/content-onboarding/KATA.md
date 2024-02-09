@@ -20,3 +20,15 @@ More information on KATA workflow can be found online.
 1. [The Improvement Kata Mindset](https://www.youtube.com/watch?v=Zhvd-oFqqhc "The Improvement Kata Mindset")
 2. [About the Toyota Kata Research](https://www.youtube.com/watch?v=_es3hYCMMmc "About the Toyota Kata Research")
 3. [Introduction to Toyota Kata](https://www.youtube.com/watch?v=1l68cFskC7Y&pp=ygUMa2F0YSBwcm9jZXNz "Introduction to Toyota Kata")
+
+
+## Working with Marvin Bot
+
+Marvin is a Python library that allows you to utilize Large Language Models (LLMs) by writing code, rather than relying on prompts. It’s open source, free to use, and rigorously type-hinted. Developed by the engineering team at Prefect, Marvin is lightweight and designed for incremental adoption.
+Here are some Key Points on Marvin:
+1. Purpose: Marvin enables you to work with LLMs in a Pythonic way, without complex abstractions. It provides customizable decorators and utilities to enhance your existing code and make AI engineering tasks easier, regardless of the framework you use.
+2. Configuration: You can set up Marvin and configure various aspects of its behavior.
+3. AI Components: Marvin offers Pythonic interfaces to AI-powered functionality.
+4. API Utilities: Low-level APIs allow you to build prompts and interact with LLMs.
+
+If you’d like to explore Marvin further, you can refer to the [official Marvin documentation](https://www.askmarvin.ai/welcome/overview/) or check out the [tutorial](https://www.askmarvin.ai/welcome/tutorial/) to get a hands-on experience
