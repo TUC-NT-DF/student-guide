@@ -31,4 +31,4 @@ Here are some Key Points on Marvin:
 3. AI Components: Marvin offers Pythonic interfaces to AI-powered functionality.
 4. API Utilities: Low-level APIs allow you to build prompts and interact with LLMs.
 
-If you’d like to explore Marvin further, you can refer to the [official Marvin documentation](https://www.askmarvin.ai/welcome/overview/) or check out the [tutorial](https://www.askmarvin.ai/welcome/tutorial/) to get a hands-on experience
+Learn more about Marvin [here](https://www.askmarvin.ai/welcome/overview/) and check out the [tutorial](https://www.askmarvin.ai/welcome/tutorial/) to get a hands-on experience.
