@@ -1,4 +1,4 @@
-# Working with Toyoyta KATA workflow
+# Working with Toyota KATA workflow
 
 Toyota Kata is a systematic approach for developing continuous improvement habits that stick. The Toyota Kata framework turns scientific thinking into a practical skill anyone, and any organization, can learn through the deliberate practice of a four-step learning and discovery process. By following the Toyota Kata structure, we will elegantly move from our current state to our desired future state.
 
