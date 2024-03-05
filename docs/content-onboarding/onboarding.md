@@ -41,12 +41,14 @@ This also applies if your use your own computer.
 ### Windows
 
 * IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
-* install the following extensions in VSCode:
-    * markdownlint to [edit \(.md\) files](https://code.visualstudio.com/Docs/languages/markdown#_editing-markdown)
-    * GitHub Pull Requests as [Git client](https://code.visualstudio.com/docs/sourcecontrol/github)
+* Git client
+* editing markup \(.md\) files
+  * install the following extensions
+    * GitHub pull requests and issues extension
+    * markdownlint
 * if you need to write JavaScript code and you don't have a good JS IDE available yet, consider
-    * Visual Studio Ultimate Edition
-    * [Webstorm](https://www.jetbrains.com/webstorm/)
+  * Visual Studio Ultimate Edition or
+  * [Webstorm](https://www.jetbrains.com/webstorm/)
 * Install [CMake](https://cmake.org/)
 * Install [Git](https://git-scm.com/)
 
