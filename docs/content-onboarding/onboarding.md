@@ -65,7 +65,7 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 
 
 
-### Windows 10
+### Windows 10+
 
 #### Generate SSH keys
 
