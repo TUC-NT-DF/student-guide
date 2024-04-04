@@ -98,10 +98,11 @@ Host github.com
  IdentityFile ~/.ssh/id_ed25519
 ```
 
-* save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.
+* save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8 . 
 
 !!! hint
-    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Next login to Github > setting > SSH and GPG keys > New SSH key. Make sure to paste the key under key section and title under title section.
+    1. Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. 
+    2. Next login to Github > setting > SSH and GPG keys > New SSH key. Make sure to paste the key under key section and title under title section. (Look for steps under the 'Deploy SSH Public Key to GitHub' heading below.)
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
