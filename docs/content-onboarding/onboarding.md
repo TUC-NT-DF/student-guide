@@ -98,10 +98,11 @@ Host github.com
  IdentityFile ~/.ssh/id_ed25519
 ```
 
-* save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.
+* save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8 . 
 
 !!! hint
-    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Next login to Github > setting > SSH and GPG keys > New SSH key. Make sure to paste the key under key section and title under title section.
+    1. Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. 
+    2. Next login to Github > setting > SSH and GPG keys > New SSH key. Make sure to paste the key under key section and title under title section. (Look for steps under the 'Deploy SSH Public Key to GitHub' heading below.)
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
@@ -135,6 +136,11 @@ Guide for test your SSH connection is [here](https://docs.github.com/en/authenti
 * Enter `Title` of your choice (e.g. `ssh-key-TUC`).
 * Set `Key Type` as `Authentication Key`.
 * Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
+* Incase you are not sure what the key is, open a command prompt and type
+```
+cat ~/.ssh/id_ed25519.pub
+```
+* You will see ssh-ed25519 ... .. . ssh-key-TUC, make sure to copy paste the entire thing to the key field.
 * Click on `Add SSH Key` button.
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
 
