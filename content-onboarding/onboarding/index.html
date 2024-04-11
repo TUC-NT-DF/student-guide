@@ -885,15 +885,6 @@ Host github.com
 </ol>
 </div>
 <p><strong>Ignore</strong> the statement "Before you can add an SSH key you need to generate it." You just created this key.</p>
-<h4 id="test-your-ssh-key-setup">Test your SSH key setup<a class="headerlink" href="#test-your-ssh-key-setup" title="Permanent link">&para;</a></h4>
-<ul>
-<li>open Windows Powershell</li>
-<li>type <code>ssh -T git@github.com</code></li>
-<li>agree to add <em>github.com</em> to the list of trusted hosts</li>
-<li>Run the above command once more, and you should only receive a <em>Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.</em> message.</li>
-</ul>
-<p>If the welcome message doesn’t appear, run SSH’s verbose mode by replacing <code>-T</code> with <code>-vvvT</code> to understand where the error is.</p>
-<p>Guide for test your SSH connection is <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">here</a></p>
 <h3 id="linux_1">Linux<a class="headerlink" href="#linux_1" title="Permanent link">&para;</a></h3>
 <h4 id="generate-ssh-keys_1">Generate SSH keys<a class="headerlink" href="#generate-ssh-keys_1" title="Permanent link">&para;</a></h4>
 <ul>
@@ -916,6 +907,15 @@ Host github.com
 <li>Click on <code>Add SSH Key</code> button.
 <img alt="Deploy Public SSH Key to GitHub" src="../../assets/deploy-ssh-key.png" title="Deploy Public SSH Key to GitHub" /></li>
 </ul>
+<h4 id="test-your-ssh-key-setup">Test your SSH key setup<a class="headerlink" href="#test-your-ssh-key-setup" title="Permanent link">&para;</a></h4>
+<ul>
+<li>open Windows Powershell OR Linux terminal bash</li>
+<li>type <code>ssh -T git@github.com</code></li>
+<li>agree to add <em>github.com</em> to the list of trusted hosts</li>
+<li>Run the above command once more, and you should only receive a <em>Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.</em> message.</li>
+</ul>
+<p>If the welcome message doesn’t appear, run SSH’s verbose mode by replacing <code>-T</code> with <code>-vvvT</code> to understand where the error is.</p>
+<p>Guide for test your SSH connection is <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">here</a></p>
 <h2 id="additional-steps">Additional Steps<a class="headerlink" href="#additional-steps" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Install Miniconda <span class="arithmatex"><span class="MathJax_Preview">based on Python 3</span><script type="math/tex">based on Python 3</script></span> by following the <a href="https://draive.com/link_dev/guide/01_Conda_Setup/">Conda How-To</a> and install the most important dependencies.</li>
@@ -1014,7 +1014,7 @@ Host github.com
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 4, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 10, 2024</span>
   </span>
 
     
