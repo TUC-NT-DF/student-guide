@@ -106,18 +106,6 @@ Host github.com
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
-#### Test your SSH key setup
-
-* open Windows Powershell
-* type `ssh -T git@github.com`
-* agree to add *github.com* to the list of trusted hosts
-* Run the above command once more, and you should only receive a *Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.* message.
-
-If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
-
-
-Guide for test your SSH connection is [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
-
 
 ### Linux
 
@@ -143,6 +131,17 @@ cat ~/.ssh/id_ed25519.pub
 * You will see ssh-ed25519 ... .. . ssh-key-TUC, make sure to copy paste the entire thing to the key field.
 * Click on `Add SSH Key` button.
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
+
+#### Test your SSH key setup
+
+* open Windows Powershell OR Linux terminal bash
+* type `ssh -T git@github.com`
+* agree to add *github.com* to the list of trusted hosts
+* Run the above command once more, and you should only receive a *Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.* message.
+
+If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
+
+Guide for test your SSH connection is [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 ## Additional Steps
 * Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
