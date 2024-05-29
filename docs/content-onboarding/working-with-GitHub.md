@@ -27,6 +27,7 @@ Most Linux users use the Git [command line](https://git-scm.com/book/en/v2/Getti
 ## Forking workflow
 
 We use "forking workflow." Please read
+
 - https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 - http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
 
