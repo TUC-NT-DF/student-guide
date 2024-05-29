@@ -27,6 +27,7 @@ We give you the maximum of flexibility to configure the computer to your needs. 
 - backup your system and data regularly (daily)
 
 Setup Bitlocker on Windows 10:
+
 * go to control Panel -> system and security -> BitLocker Drive Encryption
 * select the drive you want to encrypt
 * enter a password
