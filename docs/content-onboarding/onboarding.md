@@ -27,6 +27,7 @@ We give you the maximum of flexibility to configure the computer to your needs. 
 - backup your system and data regularly (daily)
 
 Setup Bitlocker on Windows 10:
+
 * go to control Panel -> system and security -> BitLocker Drive Encryption
 * select the drive you want to encrypt
 * enter a password
@@ -57,6 +58,17 @@ This also applies if your use your own computer.
 * Git client: A console-based Git client should already be on your system. (called `git`)  
   If you want a GUI, you can try installing `git-gui` or use the CLion plugin "Git Integration". (You do *not* need the GitHub or GitLab plugins.)
 * Use your system's package manager to install *CMake*. There is a curses based terminal GUI and a Qt based GUI.
+
+### macOS
+* IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
+* [Visual Studio Code](https://code.visualstudio.com/) for editing markdown files (`.md`)
+* If you need to write JavaScript: [WebStorm](https://www.jetbrains.com/webstorm/)
+
+* [Git](https://git-scm.com/) is typically pre-installed on macOS. Verify by opening Terminal and typing `git --version`.
+    - If not installed, install Xcode Command Line Tools, which includes Git.
+
+* Install [Homebrew](https://brew.sh/) (for package management) and use homebrew to install [CMake](https://cmake.org/).
+
 
 ## Prepare for GitHub access
 
@@ -107,7 +119,7 @@ Host github.com
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
 
-### Linux
+### Linux (works for MacOS as well)
 
 
 #### Generate SSH keys
