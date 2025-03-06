@@ -37,7 +37,7 @@ Setup Bitlocker on Windows 10:
 
 ## Install the following tools
 
-This also applies if your use your own computer.
+This also applies if you use your own computer.
 
 ### Windows
 
