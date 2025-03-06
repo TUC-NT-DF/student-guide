@@ -136,9 +136,13 @@ Host github.com
 * Enter `Title` of your choice (e.g. `ssh-key-TUC`).
 * Set `Key Type` as `Authentication Key`.
 * Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
-* Incase you are not sure what the key is, open a command prompt and type
+* Incase you are unsure of what the key is, open a command prompt and type
 ```
 cat ~/.ssh/id_ed25519.pub
+```
+* If that doesn't work, open Windows PowerShell and type
+```
+Get-Content ~\.ssh\id_ed25519.pub
 ```
 * You will see ssh-ed25519 ... .. . ssh-key-TUC, make sure to copy paste the entire thing to the key field.
 * Click on `Add SSH Key` button.
