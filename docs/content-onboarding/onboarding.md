@@ -52,6 +52,7 @@ This also applies if you use your own computer.
 * Install [Git](https://git-scm.com/)
 
 ### Linux
+
 * IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
 * [Webstorm](https://www.jetbrains.com/webstorm/) (if you need to write JavaScript)
 * Editing markup \(.md\) files: [Visual Studio Code](https://code.visualstudio.com/)
@@ -60,13 +61,12 @@ This also applies if you use your own computer.
 * Use your system's package manager to install *CMake*. There is a curses based terminal GUI and a Qt based GUI.
 
 ### macOS
+
 * IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/).
 * [Visual Studio Code](https://code.visualstudio.com/) for editing markdown files (`.md`).
 * If you need to write JavaScript: [WebStorm](https://www.jetbrains.com/webstorm/).
-
 * [Git](https://git-scm.com/) is typically pre-installed on macOS. Verify by opening Terminal and typing `git --version`.
     - If not installed, install Xcode Command Line Tools, which includes Git.
-
 * Install [Homebrew](https://brew.sh/) (for package management) and use homebrew to install [CMake](https://cmake.org/).
 
 
@@ -82,7 +82,7 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 #### Generate SSH keys
 
 
-* Open a windows powershell
+* Open a Windows PowerShell
 * Type `ssh-keygen -t ed25519 -C "ssh-key-TUC"`
 * The command prompt will ask for a file name and passphrase: Keep it empty and press enter until you see the following statement;
 * `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
@@ -94,35 +94,42 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 
 
 * Open *Windows PowerShell*.
-* Navigate to your `.ssh` directory:  
-  ```powershell
-  cd C:\Users\<YourUsername>\.ssh
+* Navigate to your `.ssh` directory:
+
+    ```powershell
+    cd C:\Users\<YourUsername>\.ssh
+    ```
+
 #### Create SSH Config File
 
-- Create an empty text file named `config` (**without** any file extension).  
-  ```powershell
-  echo "This is sample text" > config
+* Create an empty text file named `config` (**without** any file extension).
+
+    ```powershell
+    echo "# This is sample text" > config
+    ```
+
 * Open the `config` file using a text editor and add the following content:
 
-```
-# github.com account
-Host github.com
- HostName github.com
- User INSERT-YOUR-USERNAME-HERE
- IdentityFile ~/.ssh/id_ed25519
-```
+    ```
+    # github.com account
+    Host github.com
+        HostName github.com
+        User INSERT-YOUR-USERNAME-HERE
+        IdentityFile ~/.ssh/id_ed25519
+    ```
 
-* Save and close the file (**without** any file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8 . 
- *Hint:*
- It is recommended to use [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title.
+* Save and close the file (**without** any file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8 .
+
+    !!! hint
+        It is recommended to use [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title.
 
 * Next, log in to your GitHub account and go to:  
    *Settings* → *SSH and GPG keys* → *New SSH key*
     - Paste the SSH key into the *Key* field.  
     - Enter a descriptive title in the Title field (e.g., "ssh-key-TUC")
-       
+
 (For detailed steps, refer to the section *Deploy SSH Public Key to GitHub* below)
-       
+
 **Note:** You can ignore the message:  *"Before you can add an SSH key, you need to generate it."*  — You have already created your SSH key.
 
 
@@ -131,9 +138,8 @@ Host github.com
 
 #### Generate SSH keys
 
-* Create a public/private key pair using the `ssh-keygen` command-line tool. 
+* Create a public/private key pair using the `ssh-keygen` command-line tool.  
   It is recommended to use the default paths for the keys.
-* Deploy your public SSH key \(usually stored in ~/.ssh/id\_rsa.pub\).  [here](https://github.com/settings/keys).
 * On Ubuntu, it might be necessary to run `ssh-add` to add your SSH key. For more details, refer to this [Stack Overflow article](https://stackoverflow.com/questions/6167905/git-clone-through-ssh).
 
 ### Deploy SSH Public Key to GitHub
@@ -143,14 +149,19 @@ Host github.com
 * Enter `Title` of your choice (e.g. `ssh-key-TUC`).
 * Set `Key Type` as `Authentication Key`.
 * Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
-* Incase you are not sure what the key is, open a command prompt and type:
-    ```
-    cat ~/.ssh/id_ed25519.pub
-    ```
-* If that doesn't work, open Windows PowerShell and type
-```
-Get-Content ~\.ssh\id_ed25519.pub
-```
+* Incase you are not sure what the key is, open a command prompt and type
+    - in a Linux shell:
+
+        ```bash
+        cat ~/.ssh/id_ed25519.pub
+        ```
+
+    - or in a Windows PowerShell:
+
+        ```
+        Get-Content ~\.ssh\id_ed25519.pub
+        ```
+
 * You will see a key starting with `ssh-ed25519 ...` and ending with `ssh-key-TUC`. Ensure you copy the entire key and paste it into the *Key* field.
 * Click on the `Add SSH Key` button.
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
@@ -162,11 +173,12 @@ Get-Content ~\.ssh\id_ed25519.pub
 * Agree to add *github.com* to the list of trusted hosts
 * Run the above command once more, and you should only receive a *Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.* message.
 
-If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
+If the welcome message doesn't appear, run SSH's verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
 
 Guide for test your SSH connection is [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 ## Additional Steps
+
 * Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
 * [Create an avatar](http://avatarmaker.com/) for your GitHub account and add it to your GitHub [profile](https://github.com/settings/profile).
 
@@ -183,7 +195,6 @@ Meet with your supervisor regularly. For each meeting, please adhere to the foll
 - Always bring a paper notebook (as outlined below).
 - Always bring your laptop.
 - Be well-prepared to explain:
-  
   - What tasks you were assigned.
   - What results you have achieved.
   - How you solved any challenges.
