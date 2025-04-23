@@ -15,6 +15,7 @@ The key word "patch" in this document is to be interpreted as "merge request" in
 ## Goals
 
 PC3 is meant to provide an optimal collaboration model for commercial software projects. Broadly, PC3 helps an organization build consistently good software, cheaply, and rapidly. It has these specific goals:
+
 * To maximize the scale of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
 * To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
 * To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
@@ -113,5 +114,6 @@ PC3 is meant to provide an optimal collaboration model for commercial software p
 * All tasks and roles SHALL be self-assigned, based on individual judgement of the value of taking on a certain task or role.
 
 ## Bibliography
+
 1. "Key words for use in RFCs to Indicate Requirement Levels" - [ietf.org](https://tools.ietf.org/html/rfc2119)
 2. "Semantic Versioning 2.0.0" - [semver.org](http://semver.org)

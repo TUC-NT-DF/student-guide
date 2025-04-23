@@ -53,6 +53,6 @@ The lifecycle of an RFC should follow the [COSS - Consensus Oriented Specificati
 
 # References
 
-[1] The End of Software Versions, http://hintjens.com/blog:85
+[1] The End of Software Versions, <http://hintjens.com/blog:85>
 
 [2] ZeroMQ, Pieter Hintjens, O'Reilly Media, Inc., 2013, Print ISBN-13: 978-1-4493-3406-2

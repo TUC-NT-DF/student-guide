@@ -30,7 +30,7 @@ If ones code cannot compile on some of the PLATFORMS due to design \(e.g. device
 ### Development Tools
 
 * The programming language MUST be **C++11**
-  * More modern C++ flavours \(C++14/17\) MAY be used, after ensuring that compilers on the PLATFORMS support it
+    * More modern C++ flavours \(C++14/17\) MAY be used, after ensuring that compilers on the PLATFORMS support it
 * The build environment MUST be the **CMake** build system
 * Payload datatypes MUST be protobuf classes
 
@@ -45,8 +45,8 @@ double averageMean // a variable that represents a calculated average mean value
 ```
 
 * Code MUST be structured, long methods/functions SHOULD be avoided
-  * Another person MUST be able to understand the content of a function immediately
-  * Robert C. Martin \(Uncle Bob\): _"Methods should be small, smaller than small"_
+    * Another person MUST be able to understand the content of a function immediately
+    * Robert C. Martin \(Uncle Bob\): _"Methods should be small, smaller than small"_
 * Public APIs SHOULD be documented \(e.g. using doxygen\)
 * One MUST NOT use platform specific headers \(such as Windows.h\), if the code is used on other PLATFORMS. Otherwise the usage on other PLATFORMS MUST be prohibited
 * One MUST NOT call virtual functions in constructor/destructor
@@ -54,12 +54,12 @@ double averageMean // a variable that represents a calculated average mean value
 ### Filestructure
 
 * Appropriate sub-folders in the Dione-tree MUST be used:
-  * _Libraries_ for libraries
-  * _Services_ for executables
-  * _Data_ for data-containers and .proto files
+    * _Libraries_ for libraries
+    * _Services_ for executables
+    * _Data_ for data-containers and .proto files
 * There SHOULD be one class per header file, except for:
-  * auxilliary classes, whoes context does not exceed their parents scope \(e.g. are not used elsewhere, for example: configuration of services\)
-  * nested-clases inside its parent
+    * auxilliary classes, whoes context does not exceed their parents scope \(e.g. are not used elsewhere, for example: configuration of services\)
+    * nested-clases inside its parent
 * Each header file MUST use a header guard technique. It SHOULD use `#pragma once` or MAY use traditional header guards\)
 
 **Example for \#pragma once**
@@ -88,9 +88,9 @@ class Example {};
 ### General
 
 * Code SHOULD NOT be duplicated, but re-used
-  * If code from an existing Service is to be re-used, instead of copying files a library SHOULD be created and be used by both - the new and the old Service
+    * If code from an existing Service is to be re-used, instead of copying files a library SHOULD be created and be used by both - the new and the old Service
 * Code SHOULD be as near as possible to the consuming Service
-  * If code is NOT being used by any other Service/Library, it SHOULD be included in the Service executable directly
+    * If code is NOT being used by any other Service/Library, it SHOULD be included in the Service executable directly
 * Direct member access SHOULD be avoided, setter/getter MAY be used instead
 * Sensor data classes and manipulating/acquiring classes SHOULD be located in detached projects in order separate the ability to use the data from the need of hardware specific dependencies
 
@@ -98,7 +98,7 @@ class Example {};
 
 * Variables SHOULD be named in CamelCase starting with a small letter
 * Member variables SHOULD be private and start with a small letter and with prefix "\_"
-  * Any other prefixes SHOULD NOT be used
+    * Any other prefixes SHOULD NOT be used
 * Methods SHOULD start with a capital letter
 * Example:
 
@@ -116,18 +116,18 @@ private:
 ### C++ specific
 
 * One SHOULD REALLY read Scott Meyers books \(SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_\)
-  * Effective C++ \(C++98 concepts, of which most still hold for C++11\)
-  * Effective Modern C++ \(C++11 and C++14\)
+    * Effective C++ \(C++98 concepts, of which most still hold for C++11\)
+    * Effective Modern C++ \(C++11 and C++14\)
 * Modern C++11 concepts SHOULD be used extensively
-  * std::shared\_ptr, std::unique\_ptr, class enum
-  * Lambdas, std::bind
-  * Use byte-length specific integral data types: uint64\_t instead of unsigned int
+    * std::shared\_ptr, std::unique\_ptr, class enum
+    * Lambdas, std::bind
+    * Use byte-length specific integral data types: uint64\_t instead of unsigned int
 * One SHOULD prefer built-in C++11 features over platform-specific solutions, for example:
-  * Threads
-  * Mutexes
-  * Condition Variables
+    * Threads
+    * Mutexes
+    * Condition Variables
 * Const-correctnes SHOULD be fulfilled, e.g. if a method doesn't modify a classes state, declare it const
-  * [https://isocpp.org/wiki/faq/const-correctness](https://isocpp.org/wiki/faq/const-correctness)
+    * [https://isocpp.org/wiki/faq/const-correctness](https://isocpp.org/wiki/faq/const-correctness)
 
 ```cpp
 double ThisMethodDoesNotModify(double firstArgument) const;
@@ -154,6 +154,3 @@ double MyFancyDoubleAdder(double firstArgument, double secondArgument) const;
 ### Version 1.0.0
 
 * initial version
-
-
-

@@ -32,14 +32,14 @@ If you do **not** reply on time:
 
 Student assistants need to fill timesheets.
 
-* Applicable to: All students working on a HiWi job for 60 or below hours/month.
-* Where to find?: Timesheet [for Microsoft Office](https://www.tu-chemnitz.de/verwaltung/personal/public/arbeitszeitbogen_2018_HK.xlsx), [for Open Office](https://www.tu-chemnitz.de/verwaltung/personal/public/arbeitszeitbogen_2018_HK_LO.ods)
-* How to fill?:
-  * Fill the timesheet of the respective month with your Name, Total working hours (as per contract), actual daily working hours and signature .
-  * Note the rules specified in the excel.
-  * Working hour value of a single stretch should not exceed 4 hours.
-  * Do not modify the values already present in the excel that are specified against the holidays.
-* How to submit?: Get the Timesheet verified by your supervisor and submit it to the Secretary *on time* (Weinholdbau Room 406)
+- Applicable to: All students working on a HiWi job for 60 or below hours/month.
+- Where to find?: Timesheet [for Microsoft Office](https://www.tu-chemnitz.de/verwaltung/personal/public/arbeitszeitbogen_2018_HK.xlsx), [for Open Office](https://www.tu-chemnitz.de/verwaltung/personal/public/arbeitszeitbogen_2018_HK_LO.ods)
+- How to fill?:
+    - Fill the timesheet of the respective month with your Name, Total working hours (as per contract), actual daily working hours and signature .
+    - Note the rules specified in the excel.
+    - Working hour value of a single stretch should not exceed 4 hours.
+    - Do not modify the values already present in the excel that are specified against the holidays.
+- How to submit?: Get the Timesheet verified by your supervisor and submit it to the Secretary *on time* (Weinholdbau Room 406)
 
 ## Get a TUC user account
 

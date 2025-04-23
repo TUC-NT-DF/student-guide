@@ -9,6 +9,7 @@ Help us to improve this guide. Practice the GitHub workflow by improving or by a
 # System requirements
 
 In order to install and use our tools, you need one of the following platforms:
+
 - Windows 10 (Intel 64-bit) or higher
 - Ubuntu 22.04 (Intel 64-bit) or higher
 
@@ -20,18 +21,18 @@ To support your individual needs, we provide you with the maximum flexibility to
 
 - Install a clean Windows 10 or Linux Ubuntu operating system.
 - Encrypt the hard disk (HDD/SSD) and all partitions. This is essential to protect both your data and our data in case the computer is lost.
-  - Windows: Use Bitlocker or [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
-  - Linux: Use [Full disk Encryption](https://help.ubuntu.com/community/Full_Disk_Encryption_Howto_2019)
-  - Windows / Ubuntu dual boot: [Bitlocker and encrypted Ubuntu system partition](https://www.mikekasberg.com/blog/2020/04/08/dual-boot-ubuntu-and-windows-with-encryption.html)
+    - Windows: Use Bitlocker or [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
+    - Linux: Use [Full disk Encryption](https://help.ubuntu.com/community/Full_Disk_Encryption_Howto_2019)
+    - Windows / Ubuntu dual boot: [Bitlocker and encrypted Ubuntu system partition](https://www.mikekasberg.com/blog/2020/04/08/dual-boot-ubuntu-and-windows-with-encryption.html)
 - Fully encrypt all USB flash drives and external hard drives.
 - Backup your system and data regularly (daily backups recommended).
 
 Setup Bitlocker on Windows 10:
 
-* Go to Control Panel -> System and Security -> BitLocker Drive Encryption.
-* Select the drive you want to encrypt.
-* Turn on BitLocker and set a strong password.
-* <b>Important: Backup your Recovery Key</b>.
+- Go to Control Panel -> System and Security -> BitLocker Drive Encryption.
+- Select the drive you want to encrypt.
+- Turn on BitLocker and set a strong password.
+- **Important: Backup your Recovery Key.**
 
 ![sorry, image not available](../assets/Bitlocker.png "")
 
@@ -41,33 +42,33 @@ This also applies if you use your own computer.
 
 ### Windows
 
-* IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
-* Install the following extensions in VSCode:
-    * Markdownlint to [edit \(.md\) files](https://code.visualstudio.com/Docs/languages/markdown#_editing-markdown)
-    * GitHub Pull Requests as [Git client](https://code.visualstudio.com/docs/sourcecontrol/github)
-* If you need to write JavaScript code and you don't have a good JS IDE available yet, consider one of the followings:
-    * [Visual Studio Ultimate Edition](https://visualstudio.microsoft.com/de/downloads/)
-    * [Webstorm](https://www.jetbrains.com/webstorm/)
-* Install [CMake](https://cmake.org/)
-* Install [Git](https://git-scm.com/)
+- IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
+- Install the following extensions in VSCode:
+    - Markdownlint to [edit \(.md\) files](https://code.visualstudio.com/Docs/languages/markdown#_editing-markdown)
+    - GitHub Pull Requests as [Git client](https://code.visualstudio.com/docs/sourcecontrol/github)
+- If you need to write JavaScript code and you don't have a good JS IDE available yet, consider one of the followings:
+    - [Visual Studio Ultimate Edition](https://visualstudio.microsoft.com/de/downloads/)
+    - [Webstorm](https://www.jetbrains.com/webstorm/)
+- Install [CMake](https://cmake.org/)
+- Install [Git](https://git-scm.com/)
 
 ### Linux
 
-* IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
-* [Webstorm](https://www.jetbrains.com/webstorm/) (if you need to write JavaScript)
-* Editing markup \(.md\) files: [Visual Studio Code](https://code.visualstudio.com/)
-* Git client: A console-based Git client should already be on your system. (called `git`)  
+- IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
+- [Webstorm](https://www.jetbrains.com/webstorm/) (if you need to write JavaScript)
+- Editing markup \(.md\) files: [Visual Studio Code](https://code.visualstudio.com/)
+- Git client: A console-based Git client should already be on your system. (called `git`)  
   If you want a GUI, you can try installing `git-gui` or use the CLion plugin "Git Integration". (You do *not* need the GitHub or GitLab plugins.)
-* Use your system's package manager to install *CMake*. There is a curses based terminal GUI and a Qt based GUI.
+- Use your system's package manager to install *CMake*. There is a curses based terminal GUI and a Qt based GUI.
 
 ### macOS
 
-* IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/).
-* [Visual Studio Code](https://code.visualstudio.com/) for editing markdown files (`.md`).
-* If you need to write JavaScript: [WebStorm](https://www.jetbrains.com/webstorm/).
-* [Git](https://git-scm.com/) is typically pre-installed on macOS. Verify by opening Terminal and typing `git --version`.
+- IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/).
+- [Visual Studio Code](https://code.visualstudio.com/) for editing markdown files (`.md`).
+- If you need to write JavaScript: [WebStorm](https://www.jetbrains.com/webstorm/).
+- [Git](https://git-scm.com/) is typically pre-installed on macOS. Verify by opening Terminal and typing `git --version`.
     - If not installed, install Xcode Command Line Tools, which includes Git.
-* Install [Homebrew](https://brew.sh/) (for package management) and use homebrew to install [CMake](https://cmake.org/).
+- Install [Homebrew](https://brew.sh/) (for package management) and use homebrew to install [CMake](https://cmake.org/).
 
 
 ## Prepare for GitHub access
@@ -82,10 +83,10 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 #### Generate SSH keys
 
 
-* Open a Windows PowerShell
-* Type `ssh-keygen -t ed25519 -C "ssh-key-TUC"`
-* The command prompt will ask for a file name and passphrase: Keep it empty and press enter until you see the following statement;
-* `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
+- Open a Windows PowerShell
+- Type `ssh-keygen -t ed25519 -C "ssh-key-TUC"`
+- The command prompt will ask for a file name and passphrase: Keep it empty and press enter until you see the following statement;
+- `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
 
 
 
@@ -93,8 +94,8 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 #### Configure your SSH
 
 
-* Open *Windows PowerShell*.
-* Navigate to your `.ssh` directory:
+- Open *Windows PowerShell*.
+- Navigate to your `.ssh` directory:
 
     ```powershell
     cd C:\Users\<YourUsername>\.ssh
@@ -102,13 +103,13 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 
 #### Create SSH Config File
 
-* Create an empty text file named `config` (**without** any file extension).
+- Create an empty text file named `config` (**without** any file extension).
 
     ```powershell
     echo "# This is sample text" > config
     ```
 
-* Open the `config` file using a text editor and add the following content:
+- Open the `config` file using a text editor and add the following content:
 
     ```
     # github.com account
@@ -118,12 +119,12 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
         IdentityFile ~/.ssh/id_ed25519
     ```
 
-* Save and close the file (**without** any file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8 .
+- Save and close the file (**without** any file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8 .
 
     !!! hint
         It is recommended to use [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title.
 
-* Next, log in to your GitHub account and go to:  
+- Next, log in to your GitHub account and go to:  
    *Settings* → *SSH and GPG keys* → *New SSH key*
     - Paste the SSH key into the *Key* field.  
     - Enter a descriptive title in the Title field (e.g., "ssh-key-TUC")
@@ -138,18 +139,18 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 
 #### Generate SSH keys
 
-* Create a public/private key pair using the `ssh-keygen` command-line tool.  
+- Create a public/private key pair using the `ssh-keygen` command-line tool.  
   It is recommended to use the default paths for the keys.
-* On Ubuntu, it might be necessary to run `ssh-add` to add your SSH key. For more details, refer to this [Stack Overflow article](https://stackoverflow.com/questions/6167905/git-clone-through-ssh).
+- On Ubuntu, it might be necessary to run `ssh-add` to add your SSH key. For more details, refer to this [Stack Overflow article](https://stackoverflow.com/questions/6167905/git-clone-through-ssh).
 
 ### Deploy SSH Public Key to GitHub
 
-* Go to [SSH keys](https://github.com/settings/keys) settings in GitHub.
-* Click on `New SSH key` button.
-* Enter `Title` of your choice (e.g. `ssh-key-TUC`).
-* Set `Key Type` as `Authentication Key`.
-* Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
-* Incase you are not sure what the key is, open a command prompt and type
+- Go to [SSH keys](https://github.com/settings/keys) settings in GitHub.
+- Click on `New SSH key` button.
+- Enter `Title` of your choice (e.g. `ssh-key-TUC`).
+- Set `Key Type` as `Authentication Key`.
+- Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
+- Incase you are not sure what the key is, open a command prompt and type
     - in a Linux shell:
 
         ```bash
@@ -162,16 +163,17 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
         Get-Content ~\.ssh\id_ed25519.pub
         ```
 
-* You will see a key starting with `ssh-ed25519 ...` and ending with `ssh-key-TUC`. Ensure you copy the entire key and paste it into the *Key* field.
-* Click on the `Add SSH Key` button.
+- You will see a key starting with `ssh-ed25519 ...` and ending with `ssh-key-TUC`. Ensure you copy the entire key and paste it into the *Key* field.
+- Click on the `Add SSH Key` button.
+
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
 
 #### Test your SSH key setup
 
-* Open Windows Powershell OR Linux terminal bash
-* Type `ssh -T git@github.com`
-* Agree to add *github.com* to the list of trusted hosts
-* Run the above command once more, and you should only receive a *Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.* message.
+- Open Windows Powershell OR Linux terminal bash
+- Type `ssh -T git@github.com`
+- Agree to add *github.com* to the list of trusted hosts
+- Run the above command once more, and you should only receive a *Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.* message.
 
 If the welcome message doesn't appear, run SSH's verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
 
@@ -179,8 +181,8 @@ Guide for test your SSH connection is [here](https://docs.github.com/en/authenti
 
 ## Additional Steps
 
-* Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
-* [Create an avatar](http://avatarmaker.com/) for your GitHub account and add it to your GitHub [profile](https://github.com/settings/profile).
+- Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
+- [Create an avatar](http://avatarmaker.com/) for your GitHub account and add it to your GitHub [profile](https://github.com/settings/profile).
 
 ## Prepare for software version control
 
@@ -195,10 +197,10 @@ Meet with your supervisor regularly. For each meeting, please adhere to the foll
 - Always bring a paper notebook (as outlined below).
 - Always bring your laptop.
 - Be well-prepared to explain:
-  - What tasks you were assigned.
-  - What results you have achieved.
-  - How you solved any challenges.
-  - What the next steps are.
+    - What tasks you were assigned.
+    - What results you have achieved.
+    - How you solved any challenges.
+    - What the next steps are.
 - Arrive on time. If you anticipate being late, immediately contact your supervisor via phone, a signal message or SMS.
 
 In addition to email, most of our team uses encrypted messaging. Please consult your supervisor which encrypted messaging platform to use, or feel free to install both.
@@ -227,16 +229,16 @@ Just "googling" is not enough to become a good programmer! Read some good books:
 
 **Basic**
 
-* Programming: Principles and Practice Using C++ \(Bjarne Stroustrup\)
+- Programming: Principles and Practice Using C++ \(Bjarne Stroustrup\)
 
 **Advanced**
 
-* Effective C++: 55 Specific Ways to Improve Your Programs and Designs \(Scott Meyers\)  
+- Effective C++: 55 Specific Ways to Improve Your Programs and Designs \(Scott Meyers\)  
 \(read this book _before_ you read "Effective Modern C++"\)
 
-* Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14 \(Scott Meyers\)
+- Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14 \(Scott Meyers\)
 
-* Design Patterns \(Erich Gamma\) _and_ [here](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns)
+- Design Patterns \(Erich Gamma\) _and_ [here](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns)
 
 # How to do research
 
@@ -273,11 +275,11 @@ The userguide is the only source of truth during the onboarding process.
 **A:** When you realize that you will miss your due date, please do as follows:
 
 - Describe in the issue why you will miss the due date **before the due date has passed**
-  - Why was your estimate wrong, what happened.
-    - Pro tip: try to be honest to yourself: if you have bad time management, say it ... and improve it.
-  - What will you do to have a better estimate next time.
-  - Estimate a new due date and update the TC issue.
-  - Inform your supervisor that you will miss the due date and that you have updated the issue.
+    - Why was your estimate wrong, what happened.
+        - Pro tip: try to be honest to yourself: if you have bad time management, say it ... and improve it.
+    - What will you do to have a better estimate next time.
+    - Estimate a new due date and update the TC issue.
+    - Inform your supervisor that you will miss the due date and that you have updated the issue.
 
 **Q:** I do not know how to estimate the due date. What should I do?
 

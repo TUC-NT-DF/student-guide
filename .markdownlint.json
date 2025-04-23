@@ -1,0 +1,11 @@
+{
+    "default": true,
+    "MD007": {"indent": 4},
+    "MD012": false, // let's not be too annoying
+    "MD013": false,
+    "MD024": false, // the same sub-headings can make sense, but may be impossible to index
+    "MD033": {"allowed_elements": ["sub", "br"]},
+    "MD036": false, // for plihub's bookmark layout
+    "MD040": false,
+    "MD046": false  // for code in !!! blocks and tabs
+}
