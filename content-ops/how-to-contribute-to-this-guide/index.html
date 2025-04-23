@@ -932,26 +932,24 @@
 <p>This guide is hosted in a <a href="https://github.com/TUC-NT-DF/student-guide/blob/master/docs/content-ops/how-to-contribute-to-this-guide.md">GitHub repository</a>.</p>
 <p>If you want to contribute, please fork, modify and create a merge request following PC3.</p>
 <h2 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
-<p>Please use <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">markdown </a> for your text.</p>
+<p>Please use <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">markdown</a> for your text.</p>
 <h2 id="linter">Linter<a class="headerlink" href="#linter" title="Permanent link">&para;</a></h2>
 <p>Markdown Linter has been used to maintain the standard and consistency of all the Markdown files.This Linter helps to analyze and indicate the lines of code that violates the markdown's rules.</p>
-<p>If you are using Visual Studio Code for markdown editing then you can use its <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">Markdownlint Extension. </a></p>
+<p>If you are using Visual Studio Code for markdown editing then you can use its <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">Markdownlint Extension.</a></p>
 <h2 id="manual-of-style">Manual of style<a class="headerlink" href="#manual-of-style" title="Permanent link">&para;</a></h2>
 <p>We recommend to follow the <a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style">Wikipedia manual of style</a>.</p>
 <p><strong>Headings, headers, and captions:</strong> Use sentence case, not title case, capitalization in all section headings. Capitalize the first letter of the first word, but leave the rest lower case except for proper names and other items that would ordinarily be capitalized in running text. Source: <a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Capital_letters">Wikipedia</a></p>
 <h2 id="syntax-highlighting-for-code-blocks">Syntax highlighting for code blocks<a class="headerlink" href="#syntax-highlighting-for-code-blocks" title="Permanent link">&para;</a></h2>
 <p>Only the <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting">fenced</a> code blocks support syntax highlighting. You need to provide a <a href="http://prismjs.com/#languages-list">language indicator</a> as well.</p>
 <p>Example for C++ language indicator <code>cpp</code>:</p>
-<pre>```cpp
-int main()
-{
-    std::string s1 = "Hello";
-    std::string s2 = "World";
-    using std::swap;
-    swap(s1, s2);
-}
-```</pre>
-
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;World&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">swap</span><span class="p">;</span>
+<span class="w">    </span><span class="n">swap</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="w"> </span><span class="n">s2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>becomes:</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
@@ -962,16 +960,14 @@ int main()
 <span class="p">}</span>
 </code></pre></div>
 <p>Syntax highlighting will not work if you do not provide a language indicator (the <code>cpp</code> is missing).</p>
-<pre>```
-int main()
-{
-    std::string s1 = "Hello";
-    std::string s2 = "World";
-    using std::swap;
-    swap(s1, s2);
-}
-```</pre>
-
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;World&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">swap</span><span class="p">;</span>
+<span class="w">    </span><span class="n">swap</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="w"> </span><span class="n">s2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>becomes:</p>
 <div class="highlight"><pre><span></span><code>int main()
 {
@@ -1009,7 +1005,7 @@ int main()
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 3, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2025</span>
   </span>
 
     

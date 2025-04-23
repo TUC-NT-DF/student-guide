@@ -1042,8 +1042,10 @@
 <p>If ones code cannot compile on some of the PLATFORMS due to design <span class="arithmatex"><span class="MathJax_Preview">e.g. device drivers, which highly depend on the platform they are developed on</span><script type="math/tex">e.g. device drivers, which highly depend on the platform they are developed on</script></span>, it be MUST excluded from being compiled using CMake functionality <span class="arithmatex"><span class="MathJax_Preview">e.g. an option to switch them on, on not supported PLATFORMS</span><script type="math/tex">e.g. an option to switch them on, on not supported PLATFORMS</script></span>. One SHOULD always try avoid platform specific code.</p>
 <h3 id="development-tools">Development Tools<a class="headerlink" href="#development-tools" title="Permanent link">&para;</a></h3>
 <ul>
-<li>The programming language MUST be <strong>C++11</strong></li>
+<li>The programming language MUST be <strong>C++11</strong><ul>
 <li>More modern C++ flavours <span class="arithmatex"><span class="MathJax_Preview">C++14/17</span><script type="math/tex">C++14/17</script></span> MAY be used, after ensuring that compilers on the PLATFORMS support it</li>
+</ul>
+</li>
 <li>The build environment MUST be the <strong>CMake</strong> build system</li>
 <li>Payload datatypes MUST be protobuf classes</li>
 </ul>
@@ -1056,22 +1058,28 @@
 <span class="kt">double</span><span class="w"> </span><span class="n">averageMean</span><span class="w"> </span><span class="c1">// a variable that represents a calculated average mean value</span>
 </code></pre></div>
 <ul>
-<li>Code MUST be structured, long methods/functions SHOULD be avoided</li>
+<li>Code MUST be structured, long methods/functions SHOULD be avoided<ul>
 <li>Another person MUST be able to understand the content of a function immediately</li>
 <li>Robert C. Martin <span class="arithmatex"><span class="MathJax_Preview">Uncle Bob</span><script type="math/tex">Uncle Bob</script></span>: <em>"Methods should be small, smaller than small"</em></li>
+</ul>
+</li>
 <li>Public APIs SHOULD be documented <span class="arithmatex"><span class="MathJax_Preview">e.g. using doxygen</span><script type="math/tex">e.g. using doxygen</script></span></li>
 <li>One MUST NOT use platform specific headers <span class="arithmatex"><span class="MathJax_Preview">such as Windows.h</span><script type="math/tex">such as Windows.h</script></span>, if the code is used on other PLATFORMS. Otherwise the usage on other PLATFORMS MUST be prohibited</li>
 <li>One MUST NOT call virtual functions in constructor/destructor</li>
 </ul>
 <h3 id="filestructure">Filestructure<a class="headerlink" href="#filestructure" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Appropriate sub-folders in the Dione-tree MUST be used:</li>
+<li>Appropriate sub-folders in the Dione-tree MUST be used:<ul>
 <li><em>Libraries</em> for libraries</li>
 <li><em>Services</em> for executables</li>
 <li><em>Data</em> for data-containers and .proto files</li>
-<li>There SHOULD be one class per header file, except for:</li>
+</ul>
+</li>
+<li>There SHOULD be one class per header file, except for:<ul>
 <li>auxilliary classes, whoes context does not exceed their parents scope <span class="arithmatex"><span class="MathJax_Preview">e.g. are not used elsewhere, for example: configuration of services</span><script type="math/tex">e.g. are not used elsewhere, for example: configuration of services</script></span></li>
 <li>nested-clases inside its parent</li>
+</ul>
+</li>
 <li>Each header file MUST use a header guard technique. It SHOULD use <code>#pragma once</code> or MAY use traditional header guards)</li>
 </ul>
 <p><strong>Example for #pragma once</strong></p>
@@ -1093,18 +1101,24 @@
 <h2 id="development-guidelines">Development Guidelines<a class="headerlink" href="#development-guidelines" title="Permanent link">&para;</a></h2>
 <h3 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Code SHOULD NOT be duplicated, but re-used</li>
+<li>Code SHOULD NOT be duplicated, but re-used<ul>
 <li>If code from an existing Service is to be re-used, instead of copying files a library SHOULD be created and be used by both - the new and the old Service</li>
-<li>Code SHOULD be as near as possible to the consuming Service</li>
+</ul>
+</li>
+<li>Code SHOULD be as near as possible to the consuming Service<ul>
 <li>If code is NOT being used by any other Service/Library, it SHOULD be included in the Service executable directly</li>
+</ul>
+</li>
 <li>Direct member access SHOULD be avoided, setter/getter MAY be used instead</li>
 <li>Sensor data classes and manipulating/acquiring classes SHOULD be located in detached projects in order separate the ability to use the data from the need of hardware specific dependencies</li>
 </ul>
 <h3 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Variables SHOULD be named in CamelCase starting with a small letter</li>
-<li>Member variables SHOULD be private and start with a small letter and with prefix "_"</li>
+<li>Member variables SHOULD be private and start with a small letter and with prefix "_"<ul>
 <li>Any other prefixes SHOULD NOT be used</li>
+</ul>
+</li>
 <li>Methods SHOULD start with a capital letter</li>
 <li>Example:</li>
 </ul>
@@ -1119,19 +1133,27 @@
 </code></pre></div>
 <h3 id="c-specific">C++ specific<a class="headerlink" href="#c-specific" title="Permanent link">&para;</a></h3>
 <ul>
-<li>One SHOULD REALLY read Scott Meyers books <span class="arithmatex"><span class="MathJax_Preview">SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_</span><script type="math/tex">SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_</script></span></li>
+<li>One SHOULD REALLY read Scott Meyers books <span class="arithmatex"><span class="MathJax_Preview">SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_</span><script type="math/tex">SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_</script></span><ul>
 <li>Effective C++ <span class="arithmatex"><span class="MathJax_Preview">C++98 concepts, of which most still hold for C++11</span><script type="math/tex">C++98 concepts, of which most still hold for C++11</script></span></li>
 <li>Effective Modern C++ <span class="arithmatex"><span class="MathJax_Preview">C++11 and C++14</span><script type="math/tex">C++11 and C++14</script></span></li>
-<li>Modern C++11 concepts SHOULD be used extensively</li>
+</ul>
+</li>
+<li>Modern C++11 concepts SHOULD be used extensively<ul>
 <li>std::shared_ptr, std::unique_ptr, class enum</li>
 <li>Lambdas, std::bind</li>
 <li>Use byte-length specific integral data types: uint64_t instead of unsigned int</li>
-<li>One SHOULD prefer built-in C++11 features over platform-specific solutions, for example:</li>
+</ul>
+</li>
+<li>One SHOULD prefer built-in C++11 features over platform-specific solutions, for example:<ul>
 <li>Threads</li>
 <li>Mutexes</li>
 <li>Condition Variables</li>
-<li>Const-correctnes SHOULD be fulfilled, e.g. if a method doesn't modify a classes state, declare it const</li>
+</ul>
+</li>
+<li>Const-correctnes SHOULD be fulfilled, e.g. if a method doesn't modify a classes state, declare it const<ul>
 <li><a href="https://isocpp.org/wiki/faq/const-correctness">https://isocpp.org/wiki/faq/const-correctness</a></li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="nf">ThisMethodDoesNotModify</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">firstArgument</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </code></pre></div>
@@ -1176,7 +1198,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 30, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2025</span>
   </span>
 
     
