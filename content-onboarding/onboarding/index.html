@@ -855,22 +855,22 @@
 - Ubuntu 22.04 (Intel 64-bit) or higher</p>
 <h1 id="secure-your-laptop-or-notebook-computer">Secure your laptop or notebook computer<a class="headerlink" href="#secure-your-laptop-or-notebook-computer" title="Permanent link">&para;</a></h1>
 <p>Some of you will be provided with a notebook computer. This happens if you are an experienced member of the student team or if you are working remotely.</p>
-<p>We give you the maximum of flexibility to configure the computer to your needs. So please act responsibly and:</p>
+<p>To support your individual needs, we provide you with the maximum flexibility to configure the computer. At the same time, we kindly ask you to use this freedom responsibly and to follow these guidelines:</p>
 <ul>
 <li>Install a clean Windows 10 or Linux Ubuntu operating system.</li>
-<li>Encrypt the HDD and/or all partitions. This is necessary to protect our and your work in the case of computer loss.</li>
-<li>Windows: use Bitlocker or <a href="https://www.veracrypt.fr/en/Home.html">VeraCrypt</a></li>
-<li>Linux: use <a href="https://help.ubuntu.com/community/Full_Disk_Encryption_Howto_2019">full harddrive encyption</a></li>
+<li>Encrypt the hard disk (HDD/SSD) and all partitions. This is essential to protect both your data and our data in case the computer is lost.</li>
+<li>Windows: Use Bitlocker or <a href="https://www.veracrypt.fr/en/Home.html">VeraCrypt</a></li>
+<li>Linux: Use <a href="https://help.ubuntu.com/community/Full_Disk_Encryption_Howto_2019">Full disk Encryption</a></li>
 <li>Windows / Ubuntu dual boot: <a href="https://www.mikekasberg.com/blog/2020/04/08/dual-boot-ubuntu-and-windows-with-encryption.html">Bitlocker and encrypted Ubuntu system partition</a></li>
-<li>fully encrypt your USB flash drives and external USB harddisks as well</li>
-<li>backup your system and data regularly (daily)</li>
+<li>Fully encrypt all USB flash drives and external hard drives.</li>
+<li>Backup your system and data regularly (daily backups recommended).</li>
 </ul>
 <p>Setup Bitlocker on Windows 10:</p>
 <ul>
-<li>go to control Panel -&gt; system and security -&gt; BitLocker Drive Encryption</li>
-<li>select the drive you want to encrypt</li>
-<li>enter a password</li>
-<li><b>important: backup your recovery key</b></li>
+<li>Go to Control Panel -&gt; System and Security -&gt; BitLocker Drive Encryption.</li>
+<li>Select the drive you want to encrypt.</li>
+<li>Turn on BitLocker and set a strong password.</li>
+<li><b>Important: Backup your Recovery Key</b>.</li>
 </ul>
 <p><img alt="sorry, image not available" src="../../assets/Bitlocker.png" title="" /></p>
 <h2 id="install-the-following-tools">Install the following tools<a class="headerlink" href="#install-the-following-tools" title="Permanent link">&para;</a></h2>
@@ -878,12 +878,12 @@
 <h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
 <ul>
 <li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li>install the following extensions in VSCode:<ul>
-<li>markdownlint to <a href="https://code.visualstudio.com/Docs/languages/markdown#_editing-markdown">edit <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files</a></li>
+<li>Install the following extensions in VSCode:<ul>
+<li>Markdownlint to <a href="https://code.visualstudio.com/Docs/languages/markdown#_editing-markdown">edit <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files</a></li>
 <li>GitHub Pull Requests as <a href="https://code.visualstudio.com/docs/sourcecontrol/github">Git client</a></li>
 </ul>
 </li>
-<li>if you need to write JavaScript code and you don't have a good JS IDE available yet, consider one of the followings:<ul>
+<li>If you need to write JavaScript code and you don't have a good JS IDE available yet, consider one of the followings:<ul>
 <li><a href="https://visualstudio.microsoft.com/de/downloads/">Visual Studio Ultimate Edition</a></li>
 <li><a href="https://www.jetbrains.com/webstorm/">Webstorm</a></li>
 </ul>
@@ -895,71 +895,81 @@
 <ul>
 <li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 <li><a href="https://www.jetbrains.com/webstorm/">Webstorm</a> (if you need to write JavaScript)</li>
-<li>editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li>Editing markup <span class="arithmatex"><span class="MathJax_Preview">.md</span><script type="math/tex">.md</script></span> files: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 <li>Git client: A console-based Git client should already be on your system. (called <code>git</code>)<br />
   If you want a GUI, you can try installing <code>git-gui</code> or use the CLion plugin "Git Integration". (You do <em>not</em> need the GitHub or GitLab plugins.)</li>
 <li>Use your system's package manager to install <em>CMake</em>. There is a curses based terminal GUI and a Qt based GUI.</li>
 </ul>
 <h3 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
 <ul>
-<li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> for editing markdown files (<code>.md</code>)</li>
-<li>
-<p>If you need to write JavaScript: <a href="https://www.jetbrains.com/webstorm/">WebStorm</a></p>
-</li>
-<li>
-<p><a href="https://git-scm.com/">Git</a> is typically pre-installed on macOS. Verify by opening Terminal and typing <code>git --version</code>.</p>
-<ul>
+<li>IDE for software development and debugging: <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> for editing markdown files (<code>.md</code>).</li>
+<li>If you need to write JavaScript: <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>.</li>
+<li><a href="https://git-scm.com/">Git</a> is typically pre-installed on macOS. Verify by opening Terminal and typing <code>git --version</code>.<ul>
 <li>If not installed, install Xcode Command Line Tools, which includes Git.</li>
 </ul>
 </li>
-<li>
-<p>Install <a href="https://brew.sh/">Homebrew</a> (for package management) and use homebrew to install <a href="https://cmake.org/">CMake</a>.</p>
-</li>
+<li>Install <a href="https://brew.sh/">Homebrew</a> (for package management) and use homebrew to install <a href="https://cmake.org/">CMake</a>.</li>
 </ul>
 <h2 id="prepare-for-github-access">Prepare for GitHub access<a class="headerlink" href="#prepare-for-github-access" title="Permanent link">&para;</a></h2>
 <p>For a detailed understanding of GitHub access with SSH keys go to this <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh">link</a> in the GitHub docs.</p>
 <h3 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h3>
 <h4 id="generate-ssh-keys">Generate SSH keys<a class="headerlink" href="#generate-ssh-keys" title="Permanent link">&para;</a></h4>
 <ul>
-<li>open a windows powershell</li>
-<li>type <code>ssh-keygen -t ed25519 -C "ssh-key-TUC"</code></li>
-<li>the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;</li>
+<li>Open a Windows PowerShell</li>
+<li>Type <code>ssh-keygen -t ed25519 -C "ssh-key-TUC"</code></li>
+<li>The command prompt will ask for a file name and passphrase: Keep it empty and press enter until you see the following statement;</li>
 <li><code>Your identification has been saved in C:\Users\...\.ssh\id_ed25519</code></li>
 </ul>
 <h4 id="configure-your-ssh">Configure your SSH<a class="headerlink" href="#configure-your-ssh" title="Permanent link">&para;</a></h4>
 <ul>
-<li>open a Windows PowerShell</li>
-<li>cd into the <code>.ssh</code> folder (was at <code>C:\Users\...\.ssh</code>)</li>
-<li>create an empty text file <code>config</code> (<strong>without</strong> a file extension) and this can done via</li>
-</ul>
-<p><div class="highlight"><pre><span></span><code>echo &quot;This is sample text&quot; &gt; config
+<li>Open <em>Windows PowerShell</em>.</li>
+<li>
+<p>Navigate to your <code>.ssh</code> directory:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\&lt;</span><span class="n">YourUsername</span><span class="p">&gt;\.</span><span class="n">ssh</span>
 </code></pre></div>
-* open the file with a text editor and type</p>
+</li>
+</ul>
+<h4 id="create-ssh-config-file">Create SSH Config File<a class="headerlink" href="#create-ssh-config-file" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Create an empty text file named <code>config</code> (<strong>without</strong> any file extension).</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo </span><span class="s2">&quot;# This is sample text&quot;</span> <span class="p">&gt;</span> <span class="n">config</span>
+</code></pre></div>
+</li>
+<li>
+<p>Open the <code>config</code> file using a text editor and add the following content:</p>
 <div class="highlight"><pre><span></span><code># github.com account
 Host github.com
- HostName github.com
- User INSERT-YOUR-USERNAME-HERE
- IdentityFile ~/.ssh/id_ed25519
+    HostName github.com
+    User INSERT-YOUR-USERNAME-HERE
+    IdentityFile ~/.ssh/id_ed25519
 </code></pre></div>
-<ul>
-<li>save and close the file (<strong>without</strong> a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom &gt; Save with encoding &gt; UTF-8 . </li>
-</ul>
+</li>
+<li>
+<p>Save and close the file (<strong>without</strong> any file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom &gt; Save with encoding &gt; UTF-8 .</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<ol>
-<li>Prefer <a href="https://notepad-plus-plus.org/">Notepad++</a>, <a href="https://code.visualstudio.com/">Visual Studio Code</a>, or Notepad to view the files. The files contain both the key and the key title. </li>
-<li>Next login to Github &gt; setting &gt; SSH and GPG keys &gt; New SSH key. Make sure to paste the key under key section and title under title section. (Look for steps under the 'Deploy SSH Public Key to GitHub' heading below.)</li>
-</ol>
+<p>It is recommended to use <a href="https://notepad-plus-plus.org/">Notepad++</a>, <a href="https://code.visualstudio.com/">Visual Studio Code</a>, or Notepad to view the files. The files contain both the key and the key title.</p>
 </div>
-<p><strong>Ignore</strong> the statement "Before you can add an SSH key you need to generate it." You just created this key.</p>
+</li>
+<li>
+<p>Next, log in to your GitHub account and go to:<br />
+<em>Settings</em> → <em>SSH and GPG keys</em> → <em>New SSH key</em></p>
+<ul>
+<li>Paste the SSH key into the <em>Key</em> field.  </li>
+<li>Enter a descriptive title in the Title field (e.g., "ssh-key-TUC")</li>
+</ul>
+</li>
+</ul>
+<p>(For detailed steps, refer to the section <em>Deploy SSH Public Key to GitHub</em> below)</p>
+<p><strong>Note:</strong> You can ignore the message:  <em>"Before you can add an SSH key, you need to generate it."</em>  — You have already created your SSH key.</p>
 <h3 id="linux-works-for-macos-as-well">Linux (works for MacOS as well)<a class="headerlink" href="#linux-works-for-macos-as-well" title="Permanent link">&para;</a></h3>
 <h4 id="generate-ssh-keys_1">Generate SSH keys<a class="headerlink" href="#generate-ssh-keys_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Create a public/private key pair using the ssh-keygen commandline tool.<br />
+<li>Create a public/private key pair using the <code>ssh-keygen</code> command-line tool.<br />
   It is recommended to use the default paths for the keys.</li>
-<li>Deploy your public SSH key <span class="arithmatex"><span class="MathJax_Preview">usually stored in ~/.ssh/id\_rsa.pub</span><script type="math/tex">usually stored in ~/.ssh/id\_rsa.pub</script></span> <a href="https://github.com/settings/keys">here</a>.</li>
-<li>Additionally, specifically on Ubuntu, it might be necessary to do <code>ssh-add</code>. Look <a href="https://stackoverflow.com/questions/6167905/git-clone-through-ssh">here</a>.</li>
+<li>On Ubuntu, it might be necessary to run <code>ssh-add</code> to add your SSH key. For more details, refer to this <a href="https://stackoverflow.com/questions/6167905/git-clone-through-ssh">Stack Overflow article</a>.</li>
 </ul>
 <h3 id="deploy-ssh-public-key-to-github">Deploy SSH Public Key to GitHub<a class="headerlink" href="#deploy-ssh-public-key-to-github" title="Permanent link">&para;</a></h3>
 <ul>
@@ -968,45 +978,60 @@ Host github.com
 <li>Enter <code>Title</code> of your choice (e.g. <code>ssh-key-TUC</code>).</li>
 <li>Set <code>Key Type</code> as <code>Authentication Key</code>.</li>
 <li>Paste your public key from the file that was generated (<code>C:\Users\...\.ssh\id_ed25519.pub</code>) into the <code>Key</code> field.</li>
-<li>Incase you are unsure of what the key is, open a command prompt and type
-<div class="highlight"><pre><span></span><code>cat ~/.ssh/id_ed25519.pub
-</code></pre></div></li>
-<li>If that doesn't work, open Windows PowerShell and type
+<li>
+<p>Incase you are not sure what the key is, open a command prompt and type</p>
+<ul>
+<li>
+<p>in a Linux shell:</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/.ssh/id_ed25519.pub
+</code></pre></div>
+</li>
+<li>
+<p>or in a Windows PowerShell:</p>
 <div class="highlight"><pre><span></span><code>Get-Content ~\.ssh\id_ed25519.pub
-</code></pre></div></li>
-<li>You will see ssh-ed25519 ... .. . ssh-key-TUC, make sure to copy paste the entire thing to the key field.</li>
-<li>Click on <code>Add SSH Key</code> button.
+</code></pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p>You will see a key starting with <code>ssh-ed25519 ...</code> and ending with <code>ssh-key-TUC</code>. Ensure you copy the entire key and paste it into the <em>Key</em> field.</p>
+</li>
+<li>Click on the <code>Add SSH Key</code> button.
 <img alt="Deploy Public SSH Key to GitHub" src="../../assets/deploy-ssh-key.png" title="Deploy Public SSH Key to GitHub" /></li>
 </ul>
 <h4 id="test-your-ssh-key-setup">Test your SSH key setup<a class="headerlink" href="#test-your-ssh-key-setup" title="Permanent link">&para;</a></h4>
 <ul>
-<li>open Windows Powershell OR Linux terminal bash</li>
-<li>type <code>ssh -T git@github.com</code></li>
-<li>agree to add <em>github.com</em> to the list of trusted hosts</li>
+<li>Open Windows Powershell OR Linux terminal bash</li>
+<li>Type <code>ssh -T git@github.com</code></li>
+<li>Agree to add <em>github.com</em> to the list of trusted hosts</li>
 <li>Run the above command once more, and you should only receive a <em>Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.</em> message.</li>
 </ul>
-<p>If the welcome message doesn’t appear, run SSH’s verbose mode by replacing <code>-T</code> with <code>-vvvT</code> to understand where the error is.</p>
+<p>If the welcome message doesn't appear, run SSH's verbose mode by replacing <code>-T</code> with <code>-vvvT</code> to understand where the error is.</p>
 <p>Guide for test your SSH connection is <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">here</a></p>
 <h2 id="additional-steps">Additional Steps<a class="headerlink" href="#additional-steps" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Install Miniconda <span class="arithmatex"><span class="MathJax_Preview">based on Python 3</span><script type="math/tex">based on Python 3</script></span> by following the <a href="https://draive.com/link_dev/guide/01_Conda_Setup/">Conda How-To</a> and install the most important dependencies.</li>
-<li><a href="http://avatarmaker.com/">Create an avatar</a> for your GitHub account. Add it to your GitHub <a href="https://github.com/settings/profile">profile</a>.</li>
+<li><a href="http://avatarmaker.com/">Create an avatar</a> for your GitHub account and add it to your GitHub <a href="https://github.com/settings/profile">profile</a>.</li>
 </ul>
 <h2 id="prepare-for-software-version-control">Prepare for software version control<a class="headerlink" href="#prepare-for-software-version-control" title="Permanent link">&para;</a></h2>
-<p><strong>please read and follow the instructions carefully!</strong></p>
+<p><strong>Please read and follow the instructions carefully!</strong></p>
 <p><a href="../working-with-GitHub/">The GitHub workflow used by our team...</a></p>
 <h1 id="meeting-and-communication-with-your-supervisor">Meeting and communication with your supervisor<a class="headerlink" href="#meeting-and-communication-with-your-supervisor" title="Permanent link">&para;</a></h1>
-<p>Meet your supervisor regularly. If you have a meeting,</p>
+<p>Meet with your supervisor regularly. For each meeting, please adhere to the following guidelines:</p>
 <ul>
-<li>Always bring your paper notebook. (see below)</li>
+<li>Always bring a paper notebook (as outlined below).</li>
 <li>Always bring your laptop.</li>
-<li>Be well prepared to explain what you were supposed to do, what the results are, how you solved problems and what the next steps are.</li>
-<li>Do not be late. If you realise that you will be late, call your supervisor immediately and/or send a signal message or SMS <span class="arithmatex"><span class="MathJax_Preview">see below</span><script type="math/tex">see below</script></span>.</li>
+<li>Be well-prepared to explain:</li>
+<li>What tasks you were assigned.</li>
+<li>What results you have achieved.</li>
+<li>How you solved any challenges.</li>
+<li>What the next steps are.</li>
+<li>Arrive on time. If you anticipate being late, immediately contact your supervisor via phone, a signal message or SMS.</li>
 </ul>
-<p>In addition to email most of our team uses encrypted messaging. Please consult your supervisor which encryped messenger to use - or just install both :)</p>
+<p>In addition to email, most of our team uses encrypted messaging. Please consult your supervisor which encrypted messaging platform to use, or feel free to install both.</p>
 <ul>
-<li>Primary: <a href="https://element.io/">element - a secure communications platform</a></li>
-<li>Backup: <a href="https://whispersystems.org/">Signal messenger</a></li>
+<li><strong>Primary:</strong> <a href="https://element.io/">Element - Secure communications platform</a></li>
+<li><strong>Backup:</strong> <a href="https://whispersystems.org/">Signal messenger</a></li>
 </ul>
 <h2 id="write-down-all-your-findings">Write down all your findings<a class="headerlink" href="#write-down-all-your-findings" title="Permanent link">&para;</a></h2>
 <p>Please use an old-school paper notebook <span class="arithmatex"><span class="MathJax_Preview">minimum size: DIN A5</span><script type="math/tex">minimum size: DIN A5</script></span> to write down your tasks, findings, ideas, results. Do not use notebooks where sheets can easily come off nor single sheets of paper. They get lost easily. Have this notebook ready during your work and in our meetings.</p>
@@ -1040,26 +1065,26 @@ Host github.com
 <h1 id="cross-cultural-communication">Cross-Cultural communication<a class="headerlink" href="#cross-cultural-communication" title="Permanent link">&para;</a></h1>
 <p>Are you wondering about the German business and working culture? This guide from the <em>Deutsche Gesellschaft für Internationale Zusammenarbeit <span class="arithmatex"><span class="MathJax_Preview">GIZ</span><script type="math/tex">GIZ</script></span></em> provides some insights:</p>
 <p><a href="https://www.managerprogramm.de/wp-content/uploads/2020/03/Kavalchuk-How_to_do_business_with_Germans-EN.pdf">Cross-Cultural Management: How to Do Business with Germans - A Guide –</a></p>
-<h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
+<h1 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">&para;</a></h1>
 <p><strong>Q:</strong> I have seen that some students do not follow the userguide. For example some do not have an avatar. How should I proceed in that way? Should I follow the userguide or should I do what other students are doing / not doing?</p>
 <p><strong>A:</strong> Please follow the userguide. If you don't understand some contents, ask your supervisor and help to improve the guide.</p>
 <p>If other students behave different from the workflow described in the userguide ask them why they do so. If they provide a reasonable explanation, discuss with your supervisor.</p>
 <p>Some students do not follow the userguide because they do not know it or they decided to ignore it. Do not worry about it.</p>
-<p>In order to become smarter, we do not recommend you to ignore the hints we are providing in the userguide ;)</p>
+<p>In order to become smarter, we do not recommend you to ignore the hints we are providing in the userguide.</p>
 <p>The userguide is the only source of truth during the onboarding process.</p>
 <p><strong>Q:</strong> My work follows the <em>target condition</em> (TC) method. Since I work very hard, I do not have time to update the target condition. What should I do?</p>
 <p><strong>A:</strong> Updating the target condition is part of your work and the target condition itself. You should take into account the additional time when estimating your due date. The past has shown that successful students need only 5..10 minutes to update their target condition.</p>
 <p><strong>Q:</strong> What should I do when I realize that I will miss the due date of my target condition?</p>
 <p><strong>A:</strong> When you realize that you will miss your due date, please do as follows:</p>
 <ul>
-<li>describe in the issue why you will miss the due date <strong>before the due date has passed</strong></li>
-<li>why was your estimate wrong, what happened<ul>
-<li>pro tip: try to be honest to yourself: if you have bad time management, say it ... and improve it ;)</li>
+<li>Describe in the issue why you will miss the due date <strong>before the due date has passed</strong></li>
+<li>Why was your estimate wrong, what happened.<ul>
+<li>Pro tip: try to be honest to yourself: if you have bad time management, say it ... and improve it.</li>
 </ul>
 </li>
-<li>what will you do to have a better estimate next time</li>
-<li>estimate a new due date and update the TC issue</li>
-<li>inform your supervisor that you will miss the due date and that you have updated the issue</li>
+<li>What will you do to have a better estimate next time.</li>
+<li>Estimate a new due date and update the TC issue.</li>
+<li>Inform your supervisor that you will miss the due date and that you have updated the issue.</li>
 </ul>
 <p><strong>Q:</strong> I do not know how to estimate the due date. What should I do?</p>
 <p><strong>A:</strong> Every student in our team should be able to estimate the amount of time he/she needs to reach a target condition (finish a task). If you have problems estimating the time, choose a smaller target condition. A one day duration is a good start.</p>
@@ -1085,7 +1110,7 @@ Host github.com
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2025</span>
   </span>
 
     
