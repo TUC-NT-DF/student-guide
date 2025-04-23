@@ -18,7 +18,7 @@ Most of our colleagues use [SourceTree](https://www.sourcetreeapp.com/) as versi
 
 Sourcetree is a sofware solution still recommended for windows to provide a git graphical interface. It allows to connect to git repositories to easily perform all necessary git related tasks. it is a simple and user friendly which makes life of git users easier.  
 
-You are free to use other tools like [command line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or [TortoiseGit](https://tortoisegit.org/) but we can not provide support for these tools.
+You are free to use other tools like [command line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or [TortoiseGit](https://tortoisegit.org/) but we cannot provide support for these tools.
 
 
 ### Linux
@@ -38,7 +38,7 @@ We use "forking workflow." Please read
 
 - This new fork will be your personal fork of the upstream project. This new fork will be called your "origin".
 
-- Clone your personal fork (origin) to your harddrive using Git/Sourcetree. The SSH Path to your origin can be found in the web interface (as shown in the following screenshot). This will be your working directory. Please commit and push regularily!
+- Clone your personal fork (origin) to your harddrive using Git/Sourcetree. The SSH Path to your origin can be found in the web interface (as shown in the following screenshot). This will be your working directory. Please commit and push regularly!
 
 !!! info
     If you are using <b>git-bash</b>, use insert button to paste the SSH path after copying it to clipboard.

@@ -37,7 +37,7 @@ Setup Bitlocker on Windows 10:
 
 ## Install the following tools
 
-This also applies if your use your own computer.
+This also applies if you use your own computer.
 
 ### Windows
 
@@ -147,6 +147,10 @@ Host github.com
     ```
     cat ~/.ssh/id_ed25519.pub
     ```
+* If that doesn't work, open Windows PowerShell and type
+```
+Get-Content ~\.ssh\id_ed25519.pub
+```
 * You will see a key starting with `ssh-ed25519 ...` and ending with `ssh-key-TUC`. Ensure you copy the entire key and paste it into the *Key* field.
 * Click on the `Add SSH Key` button.
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
