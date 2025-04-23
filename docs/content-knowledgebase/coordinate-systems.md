@@ -1,24 +1,25 @@
 # Introduction
-Coordinate systems are essential for accurately representing locations on the Earth's surface and in navigation systems. Various coordinate systems serve different purposes based on their accuracy, ease of use, and applications. This report examines four coordinate systems: UTM (Universal Transverse Mercator), ECEF (Earth-Centered, Earth-Fixed), WGS84 (World Geodetic System 1984), and Gauss-Kruger.
 
-We can categorize them into two categories:
+Coordinate systems are essential for accurately representing locations on the Earth's surface and in navigation systems. Various coordinate systems serve different purposes based on their accuracy, ease of use, and applications. This report examines four coordinate systems: Geographic Coordinate System, ECEF (Earth-Centered, Earth-Fixed), UTM (Universal Transverse Mercator) and Gauss-Kruger.
+
+We can categorize them into three categories:
+
 - Geographic coordinate system
-- Projected coordinate systems  
+- Geocentric coordinate system
+- Projected coordinate systems
 
 ## Geographic Coordinate System
-A Geographic Coordinate System (GCS) is a coordinate system that enables every location on Earth to be specified by a set of numerical coordinates. These coordinates are typically expressed in terms of latitude, longitude, and sometimes altitude. The GCS uses a three-dimensional spherical surface to define locations on the planet.
+A Geographic Coordinate System (GCS) is a coordinate system that enables every location on Earth to be specified by a set of numerical coordinates. These coordinates are typically expressed in terms of latitude, longitude and ellipsoidal height. The GCS uses a three-dimensional spherical surface to define locations on the planet.
 
 - **Latitude (φ)**: Measures the angle between a point and the equatorial plane, ranging from -90° at the South Pole to +90° at the North Pole.
 - **Longitude (λ)**: Measures the angle east or west of the Prime Meridian, which runs through Greenwich, England, ranging from -180° to +180°.
+- **Ellipsoidal Height (h)**: Measures the height above the reference ellipsoid
 
 ![sorry, image not available](../assets/Geographic-coordinate-system.png "geographic coordinates latitude and longitude")
 
-## The World Geodetic System 1984 (WGS84)
-The World Geodetic System 1984 (WGS84) is a comprehensive global reference system for geospatial data, designed to define precise positions on the Earth's surface. It is predominantly utilized in mapping, navigation, and geodetic applications, providing a standardized coordinate framework for the planet. Developed and introduced in 1984, WGS84 marked a significant advancement in accuracy by integrating satellite data, including information from the Global Positioning System (GPS). Subsequent updates have further refined its precision and broadened its applicability.
+There are different height conventions, the most common are:
 
-WGS84 coordinates are expressed as latitude, longitude, and ellipsoidal height (h).
-
-- **Ellipsoidal Height (h)**: The distance above or below the WGS84 ellipsoid surface. This is the height provided by GPS receivers.
+- **Ellipsoidal Height (h)**: The distance above or below the reference ellipsoid surface. This is the height provided by GNSS receivers.
 - **Orthometric Height (H)**: The height above the geoid, which approximates mean sea level. This is often derived from ellipsoidal height by applying a geoid model.
 - **Geoid Height (N)**: The difference between the ellipsoidal height and orthometric height, representing the separation between the WGS84 ellipsoid and the geoid at a given location.
 
@@ -30,7 +31,7 @@ The geoid is an equipotential surface of the Earth's gravity field, which corres
 
 ![sorry, image not available](../assets/Elevation-above-surface-of-ellipsoid.png "ellipsoid and its position")
 
-## ECEF (Earth-Centered, Earth-Fixed)
+## Geocentric Coordinate System - ECEF (Earth-Centered, Earth-Fixed)
 
 1. **ECEF is a Cartesian coordinate system that fixes the origin at the Earth's center of mass.** The axes of the system rotate with the Earth, maintaining a fixed orientation relative to the Earth's surface.
    - **X-axis**: Points from the Earth's center to the intersection of the equator and the prime meridian (0° longitude).
