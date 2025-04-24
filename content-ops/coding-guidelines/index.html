@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#coding-guidelines" class="md-skip">
+        <a href="#rules-for-writing-better-code" class="md-skip">
           Skip to content
         </a>
       
@@ -657,6 +657,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-knowledgebase/coordinate-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coordinate systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -934,9 +957,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#version-101-stablestable" class="md-nav__link">
+  <a href="#version-101-stable" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 1.0.1 stablestable
+      Version 1.0.1 \(stable\)
     </span>
   </a>
   
@@ -1019,7 +1042,7 @@
   
 
 
-<h1 id="coding-guidelines">Coding Guidelines<a class="headerlink" href="#coding-guidelines" title="Permanent link">&para;</a></h1>
+<h1 id="rules-for-writing-better-code">Rules for writing better code<a class="headerlink" href="#rules-for-writing-better-code" title="Permanent link">&para;</a></h1>
 <ul>
 <li>Name: DioneCG/rfc:004/CodingGuidelines</li>
 <li>Editor: Matthias Gabriel</li>
@@ -1035,15 +1058,15 @@
 <h3 id="major-platforms">Major Platforms<a class="headerlink" href="#major-platforms" title="Permanent link">&para;</a></h3>
 <p>Your code MUST compile on the following major platforms, herein called PLATFORMS, in the sense of <strong>all</strong>.</p>
 <ul>
-<li>Windows Intel x64, MSVC 14 <span class="arithmatex"><span class="MathJax_Preview">Visual Studio 2015</span><script type="math/tex">Visual Studio 2015</script></span></li>
+<li>Windows Intel x64, MSVC 14 <span class="arithmatex">\(Visual Studio 2015\)</span></li>
 <li>Linux Intel x64, GCC4.8+</li>
 <li>Linux ARM x64, GCC4.8+</li>
 </ul>
-<p>If ones code cannot compile on some of the PLATFORMS due to design <span class="arithmatex"><span class="MathJax_Preview">e.g. device drivers, which highly depend on the platform they are developed on</span><script type="math/tex">e.g. device drivers, which highly depend on the platform they are developed on</script></span>, it be MUST excluded from being compiled using CMake functionality <span class="arithmatex"><span class="MathJax_Preview">e.g. an option to switch them on, on not supported PLATFORMS</span><script type="math/tex">e.g. an option to switch them on, on not supported PLATFORMS</script></span>. One SHOULD always try avoid platform specific code.</p>
+<p>If ones code cannot compile on some of the PLATFORMS due to design <span class="arithmatex">\(e.g. device drivers, which highly depend on the platform they are developed on\)</span>, it be MUST excluded from being compiled using CMake functionality <span class="arithmatex">\(e.g. an option to switch them on, on not supported PLATFORMS\)</span>. One SHOULD always try avoid platform specific code.</p>
 <h3 id="development-tools">Development Tools<a class="headerlink" href="#development-tools" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The programming language MUST be <strong>C++11</strong><ul>
-<li>More modern C++ flavours <span class="arithmatex"><span class="MathJax_Preview">C++14/17</span><script type="math/tex">C++14/17</script></span> MAY be used, after ensuring that compilers on the PLATFORMS support it</li>
+<li>More modern C++ flavours <span class="arithmatex">\(C++14/17\)</span> MAY be used, after ensuring that compilers on the PLATFORMS support it</li>
 </ul>
 </li>
 <li>The build environment MUST be the <strong>CMake</strong> build system</li>
@@ -1060,11 +1083,11 @@
 <ul>
 <li>Code MUST be structured, long methods/functions SHOULD be avoided<ul>
 <li>Another person MUST be able to understand the content of a function immediately</li>
-<li>Robert C. Martin <span class="arithmatex"><span class="MathJax_Preview">Uncle Bob</span><script type="math/tex">Uncle Bob</script></span>: <em>"Methods should be small, smaller than small"</em></li>
+<li>Robert C. Martin <span class="arithmatex">\(Uncle Bob\)</span>: <em>"Methods should be small, smaller than small"</em></li>
 </ul>
 </li>
-<li>Public APIs SHOULD be documented <span class="arithmatex"><span class="MathJax_Preview">e.g. using doxygen</span><script type="math/tex">e.g. using doxygen</script></span></li>
-<li>One MUST NOT use platform specific headers <span class="arithmatex"><span class="MathJax_Preview">such as Windows.h</span><script type="math/tex">such as Windows.h</script></span>, if the code is used on other PLATFORMS. Otherwise the usage on other PLATFORMS MUST be prohibited</li>
+<li>Public APIs SHOULD be documented <span class="arithmatex">\(e.g. using doxygen\)</span></li>
+<li>One MUST NOT use platform specific headers <span class="arithmatex">\(such as Windows.h\)</span>, if the code is used on other PLATFORMS. Otherwise the usage on other PLATFORMS MUST be prohibited</li>
 <li>One MUST NOT call virtual functions in constructor/destructor</li>
 </ul>
 <h3 id="filestructure">Filestructure<a class="headerlink" href="#filestructure" title="Permanent link">&para;</a></h3>
@@ -1076,7 +1099,7 @@
 </ul>
 </li>
 <li>There SHOULD be one class per header file, except for:<ul>
-<li>auxilliary classes, whoes context does not exceed their parents scope <span class="arithmatex"><span class="MathJax_Preview">e.g. are not used elsewhere, for example: configuration of services</span><script type="math/tex">e.g. are not used elsewhere, for example: configuration of services</script></span></li>
+<li>auxilliary classes, whoes context does not exceed their parents scope <span class="arithmatex">\(e.g. are not used elsewhere, for example: configuration of services\)</span></li>
 <li>nested-clases inside its parent</li>
 </ul>
 </li>
@@ -1133,9 +1156,9 @@
 </code></pre></div>
 <h3 id="c-specific">C++ specific<a class="headerlink" href="#c-specific" title="Permanent link">&para;</a></h3>
 <ul>
-<li>One SHOULD REALLY read Scott Meyers books <span class="arithmatex"><span class="MathJax_Preview">SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_</span><script type="math/tex">SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_</script></span><ul>
-<li>Effective C++ <span class="arithmatex"><span class="MathJax_Preview">C++98 concepts, of which most still hold for C++11</span><script type="math/tex">C++98 concepts, of which most still hold for C++11</script></span></li>
-<li>Effective Modern C++ <span class="arithmatex"><span class="MathJax_Preview">C++11 and C++14</span><script type="math/tex">C++11 and C++14</script></span></li>
+<li>One SHOULD REALLY read Scott Meyers books <span class="arithmatex">\(SHOULD REALLY as in: _You SHOULD REALLY buy a present for your girlfriends birthday!_\)</span><ul>
+<li>Effective C++ <span class="arithmatex">\(C++98 concepts, of which most still hold for C++11\)</span></li>
+<li>Effective Modern C++ <span class="arithmatex">\(C++11 and C++14\)</span></li>
 </ul>
 </li>
 <li>Modern C++11 concepts SHOULD be used extensively<ul>
@@ -1158,7 +1181,7 @@
 <div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="nf">ThisMethodDoesNotModify</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">firstArgument</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </code></pre></div>
 <ul>
-<li>All complex function parameters SHOULD be passed by <span class="arithmatex"><span class="MathJax_Preview">const-</span><script type="math/tex">const-</script></span>reference</li>
+<li>All complex function parameters SHOULD be passed by <span class="arithmatex">\(const-\)</span>reference</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">MyStoreFunction</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">MySuperComplexType</span><span class="o">&amp;</span><span class="w"> </span><span class="n">complexType</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fileName</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </code></pre></div>
@@ -1168,7 +1191,7 @@
 <div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="nf">MyFancyDoubleAdder</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">firstArgument</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">secondArgument</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </code></pre></div>
 <h2 id="history">History<a class="headerlink" href="#history" title="Permanent link">&para;</a></h2>
-<h3 id="version-101-stablestable">Version 1.0.1 <span class="arithmatex"><span class="MathJax_Preview">stable</span><script type="math/tex">stable</script></span><a class="headerlink" href="#version-101-stablestable" title="Permanent link">&para;</a></h3>
+<h3 id="version-101-stable">Version 1.0.1 <span class="arithmatex">\(stable\)</span><a class="headerlink" href="#version-101-stable" title="Permanent link">&para;</a></h3>
 <ul>
 <li>fixed variable naming in examples and clarified naming conventions</li>
 </ul>
@@ -1198,7 +1221,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2025</span>
   </span>
 
     

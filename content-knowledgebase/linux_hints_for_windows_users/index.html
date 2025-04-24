@@ -12,7 +12,7 @@
         <link rel="prev" href="../writing_readme/">
       
       
-        <link rel="next" href="../../content-ops/about-RFCs/">
+        <link rel="next" href="../coordinate-systems/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sshsftp-access" class="md-skip">
+        <a href="#linux-hints-for-windows-users" class="md-skip">
           Skip to content
         </a>
       
@@ -652,6 +652,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -684,6 +686,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -713,6 +717,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coordinate-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coordinate systems
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -889,16 +916,18 @@
   
 
 
-  <h1>Linux hints for Windows users</h1>
-
-<p>Our colleague Peter Kueffner shares a few notes about avoiding issues that Windows users have, when trying out Ubuntu (e.g. by setting up a Ubuntu VM):</p>
+<h1 id="linux-hints-for-windows-users">Linux hints for Windows users<a class="headerlink" href="#linux-hints-for-windows-users" title="Permanent link">&para;</a></h1>
+<p>Our colleague Peter Küffner shares a few notes about avoiding issues that Windows users have, when trying out Ubuntu (e.g. by setting up a Ubuntu VM):</p>
 <h2 id="sshsftp-access">SSH/SFTP access<a class="headerlink" href="#sshsftp-access" title="Permanent link">&para;</a></h2>
 <ul>
-<li>In order to be able to use PuTTY and FileZilla with Ubuntu, you need to install the <code>openssh-server</code> package via apt-get. This can be done via
-'''
-sudo apt-get install openssh-server
-'''</li>
-<li>No adjustments to the Firewall should be required after the installation. (Just note that you can't log in as <em>root</em> user.)</li>
+<li>
+<p>In order to be able to use PuTTY and FileZilla with Ubuntu, you need to install the <code>openssh-server</code> package via apt-get. This can be done via</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>openssh-server
+</code></pre></div>
+</li>
+<li>
+<p>No adjustments to the Firewall should be required after the installation. (Just note that you can't log in as <em>root</em> user.)</p>
+</li>
 <li>You can connect to the Ubuntu using FileZilla via SFTP with the username/password you use to log in there.<br />
     You need to explicitly specify that in the URL.
     e.g. with <code>sftp://10.0.0.1/</code></li>
@@ -911,9 +940,14 @@ sudo apt-get install openssh-server
     Note: OpenSSH "private key" files don't have an extension. "Public key" files end with .pub.</li>
 <li>You can transfer the key to the Ubuntu system. Copy it into <code>/home/&lt;user&gt;/.ssh/</code>.
     The file should be named <code>id_rsa</code> (for "ssh-rsa" keys) if you don't want to do additional configuration.</li>
-<li>The <code>id_rsa</code> file <em>MUST</em> have the its file permissions set to <code>-rw-------</code> (i.e. only the user itself is allowed to access the file).
-    You can use the command <code>chmod 600 id_rsa</code> while in the <code>.ssh</code> folder in order to set the permissions.<br />
-    WARNING: The SSH agent will refuse to accept the key when its file permissions are not set properly!</li>
+<li>
+<p>The <code>id_rsa</code> file <em>MUST</em> have the its file permissions set to <code>-rw-------</code> (i.e. only the user itself is allowed to access the file).
+    You can use the command <code>chmod 600 id_rsa</code> while in the <code>.ssh</code> folder in order to set the permissions.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The SSH agent will refuse to accept the key when its file permissions are not set properly!</p>
+</div>
+</li>
 </ul>
 
 
@@ -937,7 +971,7 @@ sudo apt-get install openssh-server
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 3, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2025</span>
   </span>
 
     
