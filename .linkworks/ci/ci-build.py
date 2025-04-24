@@ -25,6 +25,10 @@ if not buildVerInherit:
 condarcInherit = ('CONDARC' in os.environ)
 
 shortBuildPath = ("GITHUB_ACTIONS" in os.environ) #and (os.name == "nt")
+buildPath = "/builds" if shortBuildPath else "./builds"
+
+# create a directory, if none exists
+os.makedirs(buildPath, exist_ok=True)
 
 inheritStr = "[from environment]"
 print("Build Environment:")
@@ -38,10 +42,7 @@ with open(sys.argv[1], "rt") as yamlfile:
 
 params = ["conda-recipe"]
 params += ["-m", sys.argv[1]]
-if shortBuildPath:
-    params += ["--croot", "/builds"]
-else:
-    params += ["--croot", "builds"]
+params += ["--croot", buildPath]
 params += ["--no-test"]
 params += ["--no-anaconda-upload"]
 
@@ -49,9 +50,10 @@ params += ["--no-anaconda-upload"]
 if len(sys.argv) > 2:
     params += sys.argv[2:]
 
-cmd = ["mamba", "mambabuild"] + params
+cmd = ["conda", "build"] + params
 print(cmd)
 proc = subprocess.run(cmd)
 if shortBuildPath:
-    os.rename("/builds", "builds")
+    # move builds folder back to work directory
+    os.rename(buildPath, "./builds")
 sys.exit(proc.returncode)

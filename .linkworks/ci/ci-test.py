@@ -22,13 +22,14 @@ params2 = []
 pkgs = []
 for platform in platformdirs:
     pkgs += glob.glob(os.path.join(bldpath, platform, "*.tar.bz2"))
+    pkgs += glob.glob(os.path.join(bldpath, platform, "*.conda"))
 
 # forward all additional parameters
 if len(sys.argv) > 2:
     params2 += sys.argv[2:]
 
 for pkg in pkgs:
-    cmd = ["mamba", "mambabuild", "--test"] + params1 + [pkg] + params2
+    cmd = ["conda", "build", "--test"] + params1 + [pkg] + params2
     print(cmd)
     proc = subprocess.run(cmd)
     if proc.returncode != 0:

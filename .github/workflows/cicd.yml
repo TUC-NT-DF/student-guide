@@ -19,7 +19,7 @@ jobs:
     runs-on: [self-hosted, linkworks, docker, Linux, X64]
     steps:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3 # required for config files
+        uses: actions/checkout@v4 # required for config files
         with:
           submodules: false
       - name: 'Prepare environment'
@@ -43,7 +43,7 @@ jobs:
     runs-on: [self-hosted, linkworks, docker, Linux, X64] # build_platform: linux-64
     steps:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
@@ -59,7 +59,7 @@ jobs:
     runs-on: [self-hosted, linkworks, docker, Linux, X64] # build_platform: linux-64
     steps:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
@@ -85,7 +85,7 @@ jobs:
     runs-on: [self-hosted, linkworks, docker, Linux, X64]
     steps:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
