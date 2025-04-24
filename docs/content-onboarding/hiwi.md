@@ -55,12 +55,12 @@ You are working in a research lab now. Bill Freeman’s very true article descri
 
 ## Cross-Cultural communication
 
-Are you wondering about the German business and working culture? This guide from the _Deutsche Gesellschaft für Internationale Zusammenarbeit \(GIZ\)_ provides some insights:
+Are you wondering about the German business and working culture? This guide from the *Deutsche Gesellschaft für Internationale Zusammenarbeit \(GIZ\)* provides some insights:
 
 [Cross-Cultural Management: How to Do Business with Germans - A Guide –](http://www.asprea.org/imagenes/GIZ-_How_to_do_business_with_Germans_Kavalchuk-angles-1359942678515.pdf)
 
 
-# FAQ
+## FAQ
 
 **Q:** How do I get a contract as undergraduate research assistant?
 

@@ -9,6 +9,7 @@ We can categorize them into three categories:
 - Projected coordinate systems
 
 ## Geographic Coordinate System
+
 A Geographic Coordinate System (GCS) is a coordinate system that enables every location on Earth to be specified by a set of numerical coordinates. These coordinates are typically expressed in terms of latitude, longitude and ellipsoidal height. The GCS uses a three-dimensional spherical surface to define locations on the planet.
 
 - **Latitude (φ)**: Measures the angle between a point and the equatorial plane, ranging from -90° at the South Pole to +90° at the North Pole.
@@ -24,6 +25,7 @@ There are different height conventions, the most common are:
 - **Geoid Height (N)**: The difference between the ellipsoidal height and orthometric height, representing the separation between the WGS84 ellipsoid and the geoid at a given location.
 
 ### The Geoid
+
 The geoid is an equipotential surface of the Earth's gravity field, which corresponds to the mean sea level across the world. It represents a theoretical sea level surface that extends under the continents. The geoid is undulating due to variations in Earth's gravitational field caused by factors like:
 
 - **Mountain Ranges and Ocean Trenches**: Areas with more mass (e.g., mountains) exert a stronger gravitational pull, causing the geoid to bulge upward, whereas areas with less mass (e.g., ocean trenches) cause the geoid to dip.
@@ -44,19 +46,23 @@ The geoid is an equipotential surface of the Earth's gravity field, which corres
 ![sorry, image not available](../assets/Ecef_coordinates.png "Earth-Centered Earth-Fixed Coordinates")
 
 ## Projected Coordinate Systems
+
 A Projected Coordinate System (PCS) is a two-dimensional plane-based system used to represent the three-dimensional surface of the Earth. Unlike a Geographic Coordinate System (GCS), which uses latitude and longitude to define locations on the Earth's curved surface, a PCS converts these locations into a flat, map-like representation through a process called map projection.
 
-### Projection Types:
+### Projection Types
 
 #### Cylindrical
+
 - Projects the Earth onto a cylinder. Examples include the Mercator and Transverse Mercator projections.
 - Preserves angles and shapes for small areas, widely used for nautical purposes.
 
 #### Conic
+
 - Projects the Earth onto a cone. Examples include the Albers Equal-Area and Lambert Conformal Conic projections.
 - Preserves shapes, commonly used for aeronautical charts and mid-latitude regions.
 
 #### Azimuthal (Planar)
+
 - Projects the Earth onto a plane. Examples include the Polar Stereographic and Azimuthal Equidistant projections.
 - Preserves angles, used for polar regions.
 
@@ -65,6 +71,7 @@ A Projected Coordinate System (PCS) is a two-dimensional plane-based system used
 Projected coordinate systems are based on a plane (the spheroid projected on a 2D surface) and utilize linear units such as feet, meters, etc.
 
 ## UTM
+
 The Universal Transverse Mercator (UTM) is a global map projection system that divides the world into a series of zones (60 zones), each 6 degrees of longitude wide using a Transverse Mercator projection. This system provides a consistent, high-accuracy means of representing geographic coordinates on a two-dimensional plane.
 
 - Each zone has its own coordinate system, with coordinates measured in meters.
@@ -75,6 +82,7 @@ The Universal Transverse Mercator (UTM) is a global map projection system that d
 ![sorry, image not available](../assets/UTM-02.png "UTM Zones")
 
 ## Gauss-Krüger Coordinate System
+
 The Gauss-Krüger coordinate system is a map projection similar to the UTM system but typically used in Europe and parts of Asia. It is a transverse Mercator projection that maps a region of the Earth onto a cylinder, which is then unrolled to form a flat map. However, they have several differences in terms of their implementation, coverage, and usage.
 
 
@@ -88,6 +96,7 @@ The Gauss-Krüger coordinate system is a map projection similar to the UTM syste
 | Applications        | National mapping, cadastre    | International mapping, GPS               |
 
 ## references
+
 - [www.linz.govt.nz/guidance/geodetic-system/](https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/world-geodetic-system-1984-wgs84#:~:text=The%20World%20Geodetic%20System%201984,used%20in%20various%20mapping%20applications.)
 - [Wikipedia - World Geodetic System](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84)
 - [Youtube - Intro to coordinate systems and UTM projection](https://www.youtube.com/watch?v=HnWNhyxyUHg&list=LL&index=5&t=699s&ab_channel=MiddleburyRemoteSensing)

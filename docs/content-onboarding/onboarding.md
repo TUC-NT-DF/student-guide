@@ -234,11 +234,11 @@ Just "googling" is not enough to become a good programmer! Read some good books:
 **Advanced**
 
 - Effective C++: 55 Specific Ways to Improve Your Programs and Designs \(Scott Meyers\)  
-\(read this book _before_ you read "Effective Modern C++"\)
+\(read this book *before* you read "Effective Modern C++"\)
 
 - Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14 \(Scott Meyers\)
 
-- Design Patterns \(Erich Gamma\) _and_ [here](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns)
+- Design Patterns \(Erich Gamma\) *and* [here](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns)
 
 # How to do research
 
@@ -248,7 +248,7 @@ You are working in a research lab now. Bill Freeman's very true article describe
 
 # Cross-Cultural communication
 
-Are you wondering about the German business and working culture? This guide from the _Deutsche Gesellschaft für Internationale Zusammenarbeit \(GIZ\)_ provides some insights:
+Are you wondering about the German business and working culture? This guide from the *Deutsche Gesellschaft für Internationale Zusammenarbeit \(GIZ\)* provides some insights:
 
 [Cross-Cultural Management: How to Do Business with Germans - A Guide –](https://www.managerprogramm.de/wp-content/uploads/2020/03/Kavalchuk-How_to_do_business_with_Germans-EN.pdf)
 

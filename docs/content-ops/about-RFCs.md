@@ -51,7 +51,7 @@ If you want to write an RFC, please start by using our [templates](https://gitla
 
 The lifecycle of an RFC should follow the [COSS - Consensus Oriented Specification System](https://rfc.unprotocols.org/spec:2/COSS/).
 
-# References
+## References
 
 [1] The End of Software Versions, <http://hintjens.com/blog:85>
 

@@ -51,8 +51,6 @@ We use "forking workflow." Please read
 
 - if you need to update your personal fork from the project it was created from, do a "pull from upstream" --> <https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/>
 
-## Attention
-
 !!! danger
     Never use spaces in folder or filenames.
 
@@ -61,12 +59,13 @@ We use "forking workflow." Please read
 
 Please follow [PC3](../content-ops/PC3.md) for commits and pull requests.
 
-<b>A proper pull request MUST follow *Problem:/Solution:* syntax and solve **only one small** problem.</b>
+A proper pull request MUST follow *Problem:/Solution:* syntax and solve **only one small** problem.
 
-<b>The title of PR MUST contain a definition of the current problem ("Problem: ..."). The proposed solution ("Solution: ...") MUST be written in the description field of PR.</b>
+The title of PR MUST contain a definition of the current problem ("Problem: ..."). The proposed solution ("Solution: ...") MUST be written in the description field of PR.
 
-<b>! Important Note: Merging is only done by SUPERVISORS!
-That means: when you're asked to upload files or update a repository, DO NOT MERGE, but only create a Pull Request and assign it to your supervisor so that they can merge it after checking it. So please only follow the [WORKFLOW](../assets/github_workflow_beginner_01.png) mentioned previously!</b>
+!!! Important
+    **Merging is only done by SUPERVISORS!**  
+    That means: when you're asked to upload files or update a repository, DO NOT MERGE, but only create a Pull Request and assign it to your supervisor so that they can merge it after checking it. So please only follow the [WORKFLOW](../assets/github_workflow_beginner_01.png) mentioned previously!
 
 ![sorry, image not available](../assets/pull_request_example.jpg "Example of PR creation")
 
@@ -91,9 +90,9 @@ That means: when you're asked to upload files or update a repository, DO NOT MER
 
 
 
-#### Pushing to a repository with 2FA(2 Factor Authentication)
+#### Pushing to a repository with 2FA (2 Factor Authentication)
 
-While pushing to a repository on which 2FA is enabled, you will be asked for a Personal Access Token. The procedure on how to create a PAT is described [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). Once a PAT is created, please save the PAT somewhere *_safe_* (you will not be able to view it a second time) and use the same instead of your password.
+While pushing to a repository on which 2FA is enabled, you will be asked for a Personal Access Token. The procedure on how to create a PAT is described [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). Once a PAT is created, please save the PAT somewhere **safe** (you will not be able to view it a second time) and use the same instead of your password.
 
 
 ## Issues and issue tracker
@@ -126,17 +125,17 @@ There are Avatar generators available:
 - <http://www.pcworld.com/article/172320/article.html>
 
 
-# FAQ
+## FAQ
 
- **Q:** When and how often should I commit my code?
+**Q:** When and how often should I commit my code?
 
- **A:** Your first commit is done right after you have created the basic frame for your code. For example right after your IDE has created the basic code.
+**A:** Your first commit is done right after you have created the basic frame for your code. For example right after your IDE has created the basic code.
 
- After that you should commit regularly. Usually this is done every some hours.
+After that you should commit regularly. Usually this is done every some hours.
 
- You can not commit too often!
+You can not commit too often!
 
- -----
+-----
 
 **Q:** What do you mean with Problem/Solution statement according to [PC3](../content-ops/PC3.md) in the pull requests?
 
