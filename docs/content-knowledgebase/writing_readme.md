@@ -1,4 +1,4 @@
-# Writing README
+# Writing effective ReadMe for any project
 
 A **README** is a text file that introduces and explains a project. It contains information about other files in a project or archive of computer software. [Source: Wikipedia].
 

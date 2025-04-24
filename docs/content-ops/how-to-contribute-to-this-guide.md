@@ -1,4 +1,4 @@
-# You are invited to contribute
+# How to contribute to this guide
 
 ## The repository for this guide
 

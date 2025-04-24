@@ -1,4 +1,6 @@
-# PC3 - Pedantic Code Construction Contract
+# Code construction contract - our software development rules
+
+## PC3 - Pedantic Code Construction Contract
 
 The Pedantic Code Construction Contract (PC3) is an evolution of the GitHub [Fork + Pull Model](https://help.github.com/articles/fork-a-repo/), and the [ZeroMQ C4.1](http://rfc.zeromq.org/spec:22) process, aimed at providing an optimal collaboration model for commercial software projects. PC3 helps an organization build consistently good software, cheaply, and rapidly.
 

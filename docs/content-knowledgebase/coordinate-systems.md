@@ -1,4 +1,6 @@
-# Introduction
+# Coordinate systems
+
+## Introduction
 
 Coordinate systems are essential for accurately representing locations on the Earth's surface and in navigation systems. Various coordinate systems serve different purposes based on their accuracy, ease of use, and applications. This report examines four coordinate systems: Geographic Coordinate System, ECEF (Earth-Centered, Earth-Fixed), UTM (Universal Transverse Mercator) and Gauss-Kruger.
 

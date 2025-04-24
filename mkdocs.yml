@@ -10,7 +10,7 @@ site_name: Student Guide
 
 # Repository
 repo_url: 'https://github.com/TUC-NT-DF/student-guide'
-edit_uri: blob/master/docs/
+edit_uri: 'blob/master/docs/'
 
 theme:
   name: material
@@ -52,30 +52,32 @@ plugins:
       enable_creation_date: true
 
 markdown_extensions:
-  - admonition
-  - toc:
+  - markdown.extensions.toc:
       permalink: True
-  - footnotes
-  - attr_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.attr_list
 
-  - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
+  - admonition
+  - pymdownx.superfences  # for indented code blocks
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+      smart_dollar: true
   - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.tabbed
   - pymdownx.tilde
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.superfences  # for indented code blocks
 extra:
   generator: false  
   
@@ -88,12 +90,13 @@ nav:
     - 'Working with KATA': content-onboarding/KATA.md
     - 'Working with Marvin': content-onboarding/Marvin.md
   - 'Knowledge Base':
-    - 'Guidelines for conducting Test Drives': content-knowledgebase/test_drive.md
-    - 'Common pitfalls and how to avoid them': content-knowledgebase/common_pitfalls.md
-    - 'Writing effective ReadMe for any project': content-knowledgebase/writing_readme.md
-    - 'Linux hints for Windows users': content-knowledgebase/linux_hints_for_windows_users.md
+    - content-knowledgebase/test_drive.md
+    - content-knowledgebase/common_pitfalls.md
+    - content-knowledgebase/writing_readme.md
+    - content-knowledgebase/linux_hints_for_windows_users.md
+    - content-knowledgebase/coordinate-systems.md
   - 'PC3, RFC, Coding guides':
-    - 'About RFCs': content-ops/about-RFCs.md
-    - 'Code construction contract - our software development rules': content-ops/PC3.md
-    - 'Rules for writing better code': content-ops/coding-guidelines.md
-    - 'How to contribute to this guide': content-ops/how-to-contribute-to-this-guide.md
+    - content-ops/about-RFCs.md
+    - content-ops/PC3.md
+    - content-ops/coding-guidelines.md
+    - content-ops/how-to-contribute-to-this-guide.md

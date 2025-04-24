@@ -1,4 +1,4 @@
-# Coding Guidelines
+# Rules for writing better code
 
 * Name: DioneCG/rfc:004/CodingGuidelines
 * Editor: Matthias Gabriel
