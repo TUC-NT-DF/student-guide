@@ -119,19 +119,15 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
         IdentityFile ~/.ssh/id_ed25519
     ```
 
-- Save and close the file (**without** any file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8 .
+- Save and close the file (**without** any file extension).
 
+    !!! note Important
+        Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++ or in Visual Studio click on the encoding system right bottom > Save with encoding > UTF-8.
     !!! hint
         It is recommended to use [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title.
 
-- Next, log in to your GitHub account and go to:  
-   *Settings* → *SSH and GPG keys* → *New SSH key*
-    - Paste the SSH key into the *Key* field.  
-    - Enter a descriptive title in the Title field (e.g., "ssh-key-TUC")
 
-(For detailed steps, refer to the section *Deploy SSH Public Key to GitHub* below)
-
-**Note:** You can ignore the message:  *"Before you can add an SSH key, you need to generate it."*  — You have already created your SSH key.
+- For the next steps, see the section *Deploy SSH Public Key to GitHub* below.
 
 
 
@@ -145,12 +141,7 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 
 ### Deploy SSH Public Key to GitHub
 
-- Go to [SSH keys](https://github.com/settings/keys) settings in GitHub.
-- Click on `New SSH key` button.
-- Enter `Title` of your choice (e.g. `ssh-key-TUC`).
-- Set `Key Type` as `Authentication Key`.
-- Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
-- Incase you are not sure what the key is, open a command prompt and type
+- To copy the public key: open a command prompt and type
     - in a Linux shell:
 
         ```bash
@@ -162,9 +153,16 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
         ```
         Get-Content ~\.ssh\id_ed25519.pub
         ```
+    - Ensure you copy the entire SSH key, which begins with `ssh-ed25519 ...` and ends with `ssh-key-TUC.
+- Log in to your GitHub account and go to:  
+   *Settings* → *SSH and GPG keys* (https://github.com/settings/keys)
+- Click on `New SSH key` button.
+    - Enter a descriptive title in the Title field (e.g., "ssh-key-TUC").
+    - Set `Key Type` as `Authentication Key`.
+    - Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
+    - Click on the `Add SSH Key` button.
 
-- You will see a key starting with `ssh-ed25519 ...` and ending with `ssh-key-TUC`. Ensure you copy the entire key and paste it into the *Key* field.
-- Click on the `Add SSH Key` button.
+**Note:** You can ignore the message:  *"Before you can add an SSH key, you need to generate it."*  — You have already created your SSH key.
 
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
 
