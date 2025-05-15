@@ -94,7 +94,7 @@ For a detailed understanding of GitHub access with SSH keys go to this [link](ht
 #### Configure your SSH
 
 
-- Open *Windows PowerShell*.
+- In the same *Windows Powershell*
 - Navigate to your `.ssh` directory:
 
     ```powershell
