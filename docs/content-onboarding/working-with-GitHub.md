@@ -57,7 +57,7 @@ We use "forking workflow." Please read
 
 ## Commits and pull requests
 
-Please follow [PC3](../content-ops/PC3.md) for commits and pull requests.
+Please follow [PC3](../content-ops/PC3.md)(Evolution of the GitHub Fork + Pull Model) for commits and pull requests.
 
 A proper pull request MUST follow *Problem:/Solution:* syntax and solve **only one small** problem.
 
