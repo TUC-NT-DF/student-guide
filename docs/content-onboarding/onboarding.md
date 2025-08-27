@@ -27,6 +27,9 @@ To support your individual needs, we provide you with the maximum flexibility to
 - Fully encrypt all USB flash drives and external hard drives.
 - Backup your system and data regularly (daily backups recommended).
 
+!!! hint
+    BitLocker is available on Windows Pro, Pro Education, Enterprise (E3/E5) and Education (A3/A5) editions only.
+
 Setup Bitlocker on Windows 10:
 
 - Go to Control Panel -> System and Security -> BitLocker Drive Encryption.
