@@ -17,14 +17,14 @@ SPDX-License-Identifier: MPL-2.0
 # matches "##/*// comment text //***#"
 # Note: Whitespaces before the closing comment character are required in order to
 #       allow for "http://example.com/"
-re_comment_content = re.compile("^\W+\s*(.*?)(\s+\W*)?$")
+re_comment_content = re.compile("^\\W+\\s*(.*?)(\\s+\\W*)?$")
 
 # .bat files use the REM command for comments ("REM comment"), this might be prefixed with @ to prevent it from being echoed
 # Some people (ab)use labels for comments (":: comment")
 # Note: (?i) = case insensitive comparison, (?=\s|$) ensures that "REM abc" and "REM\n" work, but "REMcommand a" doesn't
-re_comment_content_bat = re.compile("(?i)^(?:@?rem|::)(?=\s|$)\s*(.*?)(\s+\W*)?$")
+re_comment_content_bat = re.compile("(?i)^(?:@?rem|::)(?=\\s|$)\\s*(.*?)(\\s+\\W*)?$")
 
-re_bat_echo_off = re.compile("(?i)^@?ECHO\s+OFF")
+re_bat_echo_off = re.compile("(?i)^@?ECHO\\s+OFF")
 re_unix_header = re.compile("^#!")
 
 
